@@ -43,7 +43,8 @@ const generateAIShortlist = asyncHandler(async (req, res) => {
       locationScore: item.locationScore,
       budgetScore: item.budgetCompatibility,
       explanation: item.explanation,
-      estimatedCost: item.estimatedCost // <-- Use the value from the service!
+      estimatedCost: item.estimatedCost,
+      aiPrediction: item.aiPrediction
     }));
 
     await Job.findByIdAndUpdate(jobId, {
@@ -55,7 +56,15 @@ const generateAIShortlist = asyncHandler(async (req, res) => {
 
     // Update contractor scores in database
     for (const item of limitedShortlist) {
-      await aiShortlistService.updateContractorScores(item.contractor._id, item.scores);
+      await aiShortlistService.updateContractorScores(item._id, {
+        overall: item.overallScore / 100, // Convert back to 0-1 scale
+        skillMatch: item.skillMatchScore / 100,
+        reliability: item.reliabilityScore / 100,
+        experience: item.experienceScore / 100,
+        location: item.locationScore / 100,
+        budget: item.budgetCompatibility / 100,
+        quality: item.qualityScore / 100
+      });
     }
 
     // Prepare response
@@ -77,7 +86,16 @@ const generateAIShortlist = asyncHandler(async (req, res) => {
             profile: item.profile
           },
           rank: item.rank,
-          scores: includeScores === 'true' ? item.scores : undefined,
+          scores: includeScores === 'true' ? {
+            overall: item.overallScore,
+            skillMatch: item.skillMatchScore,
+            reliability: item.reliabilityScore,
+            experience: item.experienceScore,
+            location: item.locationScore,
+            budget: item.budgetCompatibility,
+            quality: item.qualityScore,
+            aiPrediction: item.aiPrediction
+          } : undefined,
           explanation: item.explanation,
           estimatedCost: item.estimatedCost,
           ratePerAcre: item.ratePerAcre
@@ -135,7 +153,9 @@ const getAIShortlist = asyncHandler(async (req, res) => {
           reliability: scoreData.reliabilityScore,
           experience: scoreData.experienceScore,
           location: scoreData.locationScore,
-          budget: scoreData.budgetScore
+          budget: scoreData.budgetScore,
+          quality: scoreData.qualityScore,
+          aiPrediction: scoreData.aiPrediction
         } : null,
         explanation: scoreData ? scoreData.explanation : null
       };
@@ -165,24 +185,9 @@ const getAIShortlist = asyncHandler(async (req, res) => {
 // Get AI analytics and insights
 const getAIAnalytics = asyncHandler(async (req, res) => {
   try {
-    // Get overall statistics
-    const totalJobs = await Job.countDocuments();
-    const jobsWithAIShortlist = await Job.countDocuments({ aiShortlistGenerated: true });
-    const totalContractors = await User.countDocuments({ role: 'contractor' });
-
-    // Get contractor performance metrics
-    const contractors = await User.find({ role: 'contractor' }).select('profile.aiScore profile.rating profile.completedJobs');
+    // Use the aiAnalyticsService for consistent data
+    const analytics = await aiAnalyticsService.getComprehensiveAnalytics();
     
-    const avgAIScore = contractors.reduce((sum, c) => sum + (c.profile.aiScore || 0), 0) / contractors.length;
-    const avgRating = contractors.reduce((sum, c) => sum + (c.profile.rating || 0), 0) / contractors.length;
-    const avgCompletedJobs = contractors.reduce((sum, c) => sum + (c.profile.completedJobs || 0), 0) / contractors.length;
-
-    // Get top performing contractors by AI score
-    const topContractors = await User.find({ role: 'contractor' })
-      .select('name profile.aiScore profile.rating profile.completedJobs')
-      .sort({ 'profile.aiScore': -1 })
-      .limit(10);
-
     // Get recent AI shortlists
     const recentShortlists = await Job.find({ aiShortlistGenerated: true })
       .populate('postedBy', 'name')
@@ -190,37 +195,20 @@ const getAIAnalytics = asyncHandler(async (req, res) => {
       .sort({ aiShortlistDate: -1 })
       .limit(5);
 
-    // Calculate success rate (jobs where AI shortlisted contractor was selected)
-    const jobsWithSelection = await Job.find({ 
-      aiShortlistGenerated: true, 
-      selectedContractor: { $exists: true, $ne: null } 
-    });
-    
-    const successCount = jobsWithSelection.filter(job => 
-      job.aiShortlisted.includes(job.selectedContractor)
-    ).length;
-    
-    const successRate = jobsWithSelection.length > 0 ? (successCount / jobsWithSelection.length) * 100 : 0;
-
     res.status(200).json({
       overview: {
-        totalJobs,
-        jobsWithAIShortlist,
-        aiShortlistRate: totalJobs > 0 ? (jobsWithAIShortlist / totalJobs) * 100 : 0,
-        totalContractors,
-        successRate: Math.round(successRate)
+        totalJobs: analytics.usageStats?.totalJobs || 0,
+        jobsWithAIShortlist: analytics.usageStats?.jobsWithAI || 0,
+        aiShortlistRate: analytics.usageStats?.aiUsageRate || 0,
+        totalContractors: analytics.usageStats?.totalContractors || 0,
+        successRate: analytics.successRate || 0
       },
       metrics: {
-        avgAIScore: Math.round(avgAIScore),
-        avgRating: Math.round(avgRating * 10) / 10,
-        avgCompletedJobs: Math.round(avgCompletedJobs)
+        avgAIScore: analytics.metrics?.avgAIScore || 0,
+        avgRating: analytics.metrics?.avgRating || 0,
+        avgCompletedJobs: analytics.metrics?.avgCompletedJobs || 0
       },
-      topContractors: topContractors.map(c => ({
-        name: c && c.name ? c.name : 'Unknown',
-        aiScore: c.profile && c.profile.aiScore ? c.profile.aiScore : 0,
-        rating: c.profile && c.profile.rating ? c.profile.rating : 0,
-        completedJobs: c.profile && c.profile.completedJobs ? c.profile.completedJobs : 0
-      })),
+      topContractors: analytics.topContractors || [],
       recentShortlists: recentShortlists.map(job => ({
         jobTitle: job.title,
         postedBy: job.postedBy && job.postedBy.name ? job.postedBy.name : 'Unknown',

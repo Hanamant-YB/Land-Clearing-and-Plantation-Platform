@@ -104,6 +104,29 @@ async function deleteJob(req, res) {
 }
 
 /**
+ * DELETE /api/admin/payments/:id
+ * Delete a payment by ID (admin-only), with ID validation.
+ */
+async function deletePayment(req, res) {
+  const { id } = req.params;
+
+  if (!mongoose.isValidObjectId(id)) {
+    return res.status(400).json({ message: 'Invalid payment ID' });
+  }
+
+  try {
+    const payment = await Payment.findByIdAndDelete(id);
+    if (!payment) {
+      return res.status(404).json({ message: 'Payment not found' });
+    }
+    res.json({ message: 'Payment deleted successfully', id });
+  } catch (err) {
+    console.error('Error deleting payment:', err);
+    res.status(500).json({ message: 'Server error deleting payment' });
+  }
+}
+
+/**
  * POST /api/admin/ai-shortlist/:jobId
  * Use AI to shortlist contractors for a specific job based on their skills, past work, and job requirements
  */
@@ -245,29 +268,43 @@ async function getContractors(req, res) {
   }
 }
 
-// Get contractor reviews (from completed jobs)
+// Get contractor reviews (from completed jobs and feedback)
 async function getContractorReviews(req, res) {
   try {
-    // Get completed jobs with selected contractors
-    const completedJobs = await Job.find({ 
-      status: 'completed',
-      selectedContractor: { $exists: true, $ne: null }
-    })
-    .populate('postedBy', 'name email')
-    .populate('selectedContractor', 'name email')
-    .sort({ updatedAt: -1 });
+    const Feedback = require('../models/Feedback');
+    
+    // Get detailed feedback from Feedback model
+    const feedbackData = await Feedback.find({ isDeleted: false })
+      .populate('landownerId', 'name email')
+      .populate('contractorId', 'name email')
+      .populate('jobId', 'title workType')
+      .populate('paymentId', 'amount')
+      .sort({ createdAt: -1 });
 
-    // Transform jobs into reviews format
-    const reviews = completedJobs.map(job => ({
-      _id: job._id,
-      contractor: job.selectedContractor,
+    // Transform feedback into reviews format with detailed information
+    const reviews = feedbackData.map(feedback => ({
+      _id: feedback._id,
+      contractor: feedback.contractorId,
+      landowner: feedback.landownerId,
       job: {
-        _id: job._id,
-        title: job.title
+        _id: feedback.jobId?._id,
+        title: feedback.jobTitle || feedback.jobId?.title
       },
-      rating: job.rating || 0, // Assuming rating is stored in job
-      comment: job.review || '', // Assuming review comment is stored in job
-      createdAt: job.updatedAt // When job was completed
+      rating: feedback.rating || 0,
+      comment: feedback.review || '',
+      // Detailed category ratings
+      qualityOfWork: feedback.qualityOfWork || 0,
+      communication: feedback.communication || 0,
+      timeliness: feedback.timeliness || 0,
+      professionalism: feedback.professionalism || 0,
+      // Additional feedback data
+      strengths: feedback.strengths || '',
+      areasForImprovement: feedback.areasForImprovement || '',
+      wouldRecommend: feedback.wouldRecommend || false,
+      // Payment and metadata
+      payment: feedback.paymentId,
+      jobBudget: feedback.jobBudget,
+      createdAt: feedback.createdAt
     }));
 
     res.json(reviews);
@@ -463,6 +500,7 @@ module.exports = {
   getUsers,
   deleteUser,
   deleteJob,
+  deletePayment,
   aiShortlistContractors,
   getJobApplicants,
   getLandowners,

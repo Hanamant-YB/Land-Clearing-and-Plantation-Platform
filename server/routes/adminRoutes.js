@@ -8,6 +8,7 @@ const {
   getUsers,
   deleteUser,
   deleteJob,
+  deletePayment,
   aiShortlistContractors,
   getJobApplicants,
   getLandowners,
@@ -46,6 +47,9 @@ router.delete('/users/:id', auth, adminAuth, deleteUser);
 
 // @route   DELETE /api/admin/jobs/:id
 router.delete('/jobs/:id', auth, adminAuth, deleteJob);
+
+// @route   DELETE /api/admin/payments/:id
+router.delete('/payments/:id', auth, adminAuth, deletePayment);
 
 // @route   POST /api/admin/ai-shortlist/:jobId
 router.post('/ai-shortlist/:jobId', auth, adminAuth, aiShortlistContractors);

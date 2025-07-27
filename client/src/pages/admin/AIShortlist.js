@@ -109,6 +109,7 @@ const AIShortlist = () => {
         }
       });
       const data = await response.json();
+      console.log('🔍 Admin received shortlist data:', data.shortlist);
       setShortlist(data.shortlist);
       setSelectedJob(data.job);
       fetchAnalytics(); // Refresh analytics
@@ -315,9 +316,15 @@ const AIShortlist = () => {
                           <div className="contractor-info">
                             <div className="contractor-name">{contractor.name}</div>
                             <div className="contractor-stats">
-                              <span>AI Score: {contractor.aiScore}</span>
+                              <span>Overall AI Score: {Math.round(contractor.aiScore * 100)}%</span>
+                              {contractor.latestJobAIScore && (
+                                <span>Latest Job: {Math.round(contractor.latestJobAIScore * 100)}%</span>
+                              )}
                               <span>Rating: {contractor.rating}/5</span>
                               <span>Jobs: {contractor.completedJobs}</span>
+                              {contractor.aiJobsCount && (
+                                <span>AI Shortlists: {contractor.aiJobsCount}</span>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -588,6 +595,19 @@ const AIShortlist = () => {
                                     <span>{item.scores.location}%</span>
                                   </div>
                                 </div>
+                                <div className="score-item">
+                                  <span>Quality</span>
+                                  <div className="score-bar">
+                                    <div 
+                                      className="score-fill" 
+                                      style={{ 
+                                        width: `${item.scores.quality}%`,
+                                        backgroundColor: getScoreColor(item.scores.quality)
+                                      }}
+                                    ></div>
+                                    <span>{item.scores.quality}%</span>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           )}
@@ -690,7 +710,9 @@ const AIShortlist = () => {
                       <tr>
                         <th>Rank</th>
                         <th>Contractor</th>
-                        <th>AI Score</th>
+                        <th>Overall AI Score</th>
+                        <th>Latest Job Score</th>
+                        <th>AI Shortlists</th>
                         <th>Rating</th>
                         <th>Completed Jobs</th>
                       </tr>
@@ -710,9 +732,19 @@ const AIShortlist = () => {
                               <td>{contractor.name}</td>
                               <td>
                                 <span className="score-badge" style={{ backgroundColor: getScoreColor(contractor.aiScore) }}>
-                                  {contractor.aiScore}
+                                  {Math.round(contractor.aiScore * 100)}%
                                 </span>
                               </td>
+                              <td>
+                                {contractor.latestJobAIScore ? (
+                                  <span className="score-badge" style={{ backgroundColor: getScoreColor(contractor.latestJobAIScore) }}>
+                                    {Math.round(contractor.latestJobAIScore * 100)}%
+                                  </span>
+                                ) : (
+                                  <span style={{ color: '#999' }}>N/A</span>
+                                )}
+                              </td>
+                              <td>{contractor.aiJobsCount || 0}</td>
                               <td>{contractor.rating}/5</td>
                               <td>{contractor.completedJobs}</td>
                             </tr>

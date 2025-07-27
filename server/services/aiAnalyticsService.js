@@ -70,15 +70,17 @@ class AIAnalyticsService {
         role: 'contractor',
         'profile.aiScore': { $gt: 0 }
       })
-      .select('name profile.aiScore profile.rating profile.completedJobs')
+      .select('name profile.aiScore profile.latestJobAIScore profile.rating profile.completedJobs profile.shortlistHistory')
       .sort({ 'profile.aiScore': -1 })
       .limit(limit);
 
       return contractors.map(c => ({
         name: c.name,
         aiScore: c.profile.aiScore,
+        latestJobAIScore: c.profile.latestJobAIScore,
         rating: c.profile.rating,
-        completedJobs: c.profile.completedJobs
+        completedJobs: c.profile.completedJobs,
+        aiJobsCount: c.profile.shortlistHistory?.length || 0
       }));
     } catch (error) {
       console.error('Error getting top contractors:', error);
@@ -166,30 +168,71 @@ class AIAnalyticsService {
     }
   }
 
+  // Calculate average AI score across all contractors
+  async getAverageAIScore() {
+    try {
+      const contractors = await User.find({ 
+        role: 'contractor',
+        'profile.aiScore': { $gt: 0 }
+      }).select('profile.aiScore');
+
+      if (contractors.length === 0) return 0;
+
+      const totalScore = contractors.reduce((sum, contractor) => sum + (contractor.profile.aiScore || 0), 0);
+      const avgScore = totalScore / contractors.length;
+      
+      return Math.round(avgScore * 100); // Convert from 0-1 to 0-100
+    } catch (error) {
+      console.error('Error calculating average AI score:', error);
+      return 0;
+    }
+  }
+
   // Get comprehensive AI analytics
   async getComprehensiveAnalytics() {
     try {
-      const [successRate, jobTypeStats, topContractors, usageStats] = await Promise.all([
+      const [successRate, jobTypeStats, topContractors, usageStats, avgAIScore] = await Promise.all([
         this.getAISuccessRate(),
         this.getSuccessRateByJobType(),
         this.getTopContractors(),
-        this.getAIUsageStats()
+        this.getAIUsageStats(),
+        this.getAverageAIScore()
       ]);
 
+      // Calculate additional metrics
+      const contractors = await User.find({ role: 'contractor' }).select('profile.rating profile.completedJobs');
+      const avgRating = contractors.length > 0 ? 
+        contractors.reduce((sum, c) => sum + (c.profile?.rating || 0), 0) / contractors.length : 0;
+      const avgCompletedJobs = contractors.length > 0 ? 
+        contractors.reduce((sum, c) => sum + (c.profile?.completedJobs || 0), 0) / contractors.length : 0;
+
       return {
-        successRate,
+        successRate: successRate.successRate || 0,
         jobTypeStats,
         topContractors,
-        usageStats,
+        usageStats: {
+          ...usageStats,
+          totalContractors: contractors.length
+        },
+        metrics: {
+          avgAIScore,
+          avgRating: Math.round(avgRating * 10) / 10,
+          avgCompletedJobs: Math.round(avgCompletedJobs)
+        },
         generatedAt: new Date()
       };
     } catch (error) {
       console.error('Error getting comprehensive analytics:', error);
       return {
-        successRate: { totalJobs: 0, aiSelected: 0, successRate: 0 },
+        successRate: 0,
         jobTypeStats: {},
         topContractors: [],
-        usageStats: { totalJobs: 0, jobsWithAI: 0, aiUsageRate: 0 },
+        usageStats: { totalJobs: 0, jobsWithAI: 0, aiUsageRate: 0, totalContractors: 0 },
+        metrics: {
+          avgAIScore: 0,
+          avgRating: 0,
+          avgCompletedJobs: 0
+        },
         generatedAt: new Date()
       };
     }

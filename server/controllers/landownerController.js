@@ -57,7 +57,21 @@ exports.postJob = async (req, res) => {
     // 2. Generate shortlist
     const shortlist = await aiShortlistService.AIShortlistService.generateShortlistWithAI(job, contractors);
     console.log('AI Shortlist:', shortlist);
-    // 3. Save shortlist and scores to job
+    
+    // 3. Update contractor scores in database
+    for (const item of shortlist) {
+      await aiShortlistService.AIShortlistService.updateContractorScores(item._id, {
+        overall: item.overallScore / 100, // Convert back to 0-1 scale
+        skillMatch: item.skillMatchScore / 100,
+        reliability: item.reliabilityScore / 100,
+        experience: item.experienceScore / 100,
+        location: item.locationScore / 100,
+        budget: item.budgetCompatibility / 100,
+        quality: item.qualityScore / 100
+      });
+    }
+    
+    // 4. Save shortlist and scores to job
     job.aiShortlisted = shortlist.map(item => item._id);
     job.aiShortlistScores = shortlist.map(item => ({
       ...item, // This copies all fields, including estimatedCost

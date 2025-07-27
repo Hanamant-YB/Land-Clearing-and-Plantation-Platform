@@ -42,7 +42,8 @@ const userSchema = new mongoose.Schema({
     postedJobs:    { type: Number, default: 0 },
     totalSpent:    { type: Number, default: 0 },
     // AI/ML Enhanced Fields
-    aiScore:       { type: Number, default: 0 }, // Overall AI confidence score
+    aiScore:       { type: Number, default: 0 }, // Overall AI confidence score (average of all jobs)
+    latestJobAIScore: { type: Number, default: 0 }, // Latest job-specific AI score
     skillMatchScore: { type: Number, default: 0 }, // Skill matching score
     reliabilityScore: { type: Number, default: 0 }, // Based on completion rate, ratings
     experienceScore: { type: Number, default: 0 }, // Based on years, job count

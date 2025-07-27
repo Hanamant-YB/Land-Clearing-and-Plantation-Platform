@@ -120,12 +120,15 @@ export default function AdminDashboard() {
       });
       
       try {
+        // Add cache-busting timestamp to force fresh data
+        const timestamp = Date.now();
+        
         // Fetch all data initially
         const [jobsRes, paymentsRes, usersRes, analyticsRes] = await Promise.all([
-          api.get('/jobs'),
-          api.get('/payments'),
-          api.get('/users'),
-          api.get('/analytics')
+          api.get(`/jobs?t=${timestamp}`),
+          api.get(`/payments?t=${timestamp}`),
+          api.get(`/users?t=${timestamp}`),
+          api.get(`/analytics?t=${timestamp}`)
         ]);
         
         setJobs(jobsRes.data);
@@ -133,13 +136,9 @@ export default function AdminDashboard() {
         setUsers(usersRes.data);
         setAnalytics(analyticsRes.data);
         
-        // Fetch AI analytics separately with error handling
-        try {
-          const aiAnalyticsRes = await api.get('/ai-shortlist/analytics');
-          setAiAnalytics(aiAnalyticsRes.data);
-        } catch (error) {
-          console.log('AI analytics not available yet, using default values');
-          // Keep default values if AI analytics endpoint is not available
+        // Set AI analytics from the main analytics response
+        if (analyticsRes.data.aiAnalytics) {
+          setAiAnalytics(analyticsRes.data.aiAnalytics);
         }
         
         // Fetch specific data based on active tab
@@ -379,6 +378,58 @@ export default function AdminDashboard() {
     } catch (err) {
       console.error(err);
       alert(err.response?.data?.message || 'Failed to delete payment');
+    }
+  };
+
+  // Force refresh all data
+  const handleRefreshData = async () => {
+    setLoading(true);
+    try {
+      const api = axios.create({
+        baseURL: process.env.REACT_APP_API_URL + '/admin',
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      
+      const timestamp = Date.now();
+      const [jobsRes, paymentsRes, usersRes, analyticsRes] = await Promise.all([
+        api.get(`/jobs?t=${timestamp}`),
+        api.get(`/payments?t=${timestamp}`),
+        api.get(`/users?t=${timestamp}`),
+        api.get(`/analytics?t=${timestamp}`)
+      ]);
+      
+      setJobs(jobsRes.data);
+      setPayments(paymentsRes.data);
+      setUsers(usersRes.data);
+      setAnalytics(analyticsRes.data);
+      
+      if (analyticsRes.data.aiAnalytics) {
+        setAiAnalytics(analyticsRes.data.aiAnalytics);
+      }
+      
+      // Refresh specific tab data if needed
+      if (activeTab === 'landowners') {
+        const landownersRes = await api.get(`/landowners?t=${timestamp}`);
+        setLandowners(landownersRes.data);
+      }
+      if (activeTab === 'contractors') {
+        const contractorsRes = await api.get(`/contractors?t=${timestamp}`);
+        setContractors(contractorsRes.data);
+      }
+      if (activeTab === 'contractor-reviews') {
+        const reviewsRes = await api.get(`/contractor-reviews?t=${timestamp}`);
+        setContractorReviews(reviewsRes.data);
+      }
+      if (activeTab === 'works') {
+        const worksRes = await api.get(`/works?t=${timestamp}`);
+        setWorks(worksRes.data);
+      }
+      
+      console.log('✅ Data refreshed successfully');
+    } catch (error) {
+      console.error('Error refreshing data:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -679,6 +730,14 @@ export default function AdminDashboard() {
               </>
             )}
           </div>
+          <button 
+            className="refresh-btn"
+            onClick={handleRefreshData}
+            disabled={loading}
+            title="Refresh Data"
+          >
+            {loading ? '🔄' : '🔄'} Refresh
+          </button>
         </header>
 
         <div className="content-body">
@@ -827,79 +886,79 @@ export default function AdminDashboard() {
                     </tr>
                   </thead>
                   <tbody>
-                    {getFilteredData(contractorReviews, ['contractor.name', 'job.title']).map(review => (
-                      <tr key={review._id}>
-                        <td>
-                          <button
-                            className="link-btn"
-                            onClick={() => openReviewDetailModal(review)}
-                            title="View review details"
-                          >
-                            {review.contractor?.name}
-                          </button>
-                        </td>
-                        <td>
-                          <button
-                            className="link-btn"
-                            onClick={() => openReviewDetailModal(review)}
-                            title="View review details"
-                          >
-                            {review.job?.title}
-                          </button>
-                        </td>
-                        <td>
-                          <button
-                            className="link-btn"
-                            onClick={() => openReviewDetailModal(review)}
-                            title="View review details"
-                          >
-                            <div className="rating-display">
-                              {[1, 2, 3, 4, 5].map(star => (
-                                <span 
-                                  key={star} 
-                                  className={`star ${star <= review.rating ? 'filled' : 'empty'}`}
-                                >
-                                  ★
-                                </span>
-                              ))}
-                              <span className="rating-text">({review.rating}/5)</span>
-                            </div>
-                          </button>
-                        </td>
-                        <td>{review.comment || '–'}</td>
-                        <td>{new Date(review.createdAt).toLocaleString()}</td>
-                        <td>
-                          <button
-                            className="action-btn"
-                            title="View review details"
-                            onClick={() => openReviewDetailModal(review)}
-                          >
-                            <Eye size={18} />
-                          </button>
-                          <button
-                            className="action-btn edit"
-                            onClick={() => {
-                              const newRating = prompt('Enter new rating (1-5):', review.rating);
-                              const newReview = prompt('Enter new review:', review.comment);
-                              if (newRating && newReview) {
-                                handleAddReview(review._id, parseInt(newRating), newReview);
-                              }
-                            }}
-                            title="Edit Review"
-                          >
-                            <Edit size={16} />
-                          </button>
-                          <button
-                            className="action-btn delete"
-                            onClick={() => handleDeleteReview(review._id)}
-                            style={{ marginLeft: 8 }}
-                            title="Delete Review"
-                          >
-                            <Trash2 size={16} />
-                          </button>
+                    {getFilteredData(contractorReviews, ['contractor.name', 'job.title']).length > 0 ? (
+                      getFilteredData(contractorReviews, ['contractor.name', 'job.title']).map(review => (
+                        <tr key={review._id}>
+                          <td>
+                            <button
+                              className="link-btn"
+                              onClick={() => openReviewDetailModal(review)}
+                              title="View review details"
+                            >
+                              {review.contractor?.name}
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              className="link-btn"
+                              onClick={() => openReviewDetailModal(review)}
+                              title="View review details"
+                            >
+                              {review.job?.title}
+                            </button>
+                          </td>
+                          <td>
+                            <button
+                              className="link-btn"
+                              onClick={() => openReviewDetailModal(review)}
+                              title="View review details"
+                            >
+                              <div className="rating-display">
+                                {[1, 2, 3, 4, 5].map(star => (
+                                  <span 
+                                    key={star} 
+                                    className={`star ${star <= review.rating ? 'filled' : 'empty'}`}
+                                  >
+                                    ★
+                                  </span>
+                                ))}
+                                <span className="rating-text">({review.rating}/5)</span>
+                              </div>
+                            </button>
+                          </td>
+                          <td>{review.comment || '–'}</td>
+                          <td>{new Date(review.createdAt).toLocaleString()}</td>
+                          <td>
+                            <button
+                              className="action-btn"
+                              title="View review details"
+                              onClick={() => openReviewDetailModal(review)}
+                            >
+                              <Eye size={18} />
+                            </button>
+
+                            <button
+                              className="action-btn delete"
+                              onClick={() => handleDeleteReview(review._id)}
+                              style={{ marginLeft: 8 }}
+                              title="Delete Review"
+                            >
+                              <Trash2 size={16} />
+                            </button>
+                          </td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan="6" style={{ textAlign: 'center', padding: '20px' }}>
+                          <div style={{ color: '#666', fontSize: '14px' }}>
+                            📝 No reviews found
+                            <br />
+                            <small>Reviews will appear here when landowners submit feedback for completed jobs</small>
+                          </div>
                         </td>
                       </tr>
-                    ))}
+                    )}
                   </tbody>
                 </table>
               </div>
