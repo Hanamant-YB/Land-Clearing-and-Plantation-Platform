@@ -1,0 +1,117 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Register Container */
+.register-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #f3f4f6;
+  min-height: calc(100vh - 200px); /* Account for navbar and footer */
+}
+
+/* Form Container */
+.register-form {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Heading */
+.register-form h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+/* Error Message */
+.register-form .error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Inputs & Select */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Placeholder Color */
+.register-form ::placeholder {
+  color: #94a3b8;
+}
+
+/* Submit Button */
+.register-form button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.register-form button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.register-form button:not(:disabled):hover {
+  background-color: #1e40af;
+}
+
+.register-form button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-container {
+    padding: 1rem;
+    min-height: calc(100vh - 150px);
+  }
+  
+  .register-form {
+    padding: 1.5rem;
+  }
+
+  .register-form h2 {
+    font-size: 1.6rem;
+  }
+}

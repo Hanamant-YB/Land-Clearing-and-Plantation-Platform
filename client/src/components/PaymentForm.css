@@ -1,0 +1,395 @@
+.payment-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.payment-form-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e1e5e9;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.job-summary {
+  padding: 20px 24px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.job-summary h3 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.job-description {
+  color: #6c757d;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.job-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.job-meta span {
+  background: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.job-type {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+  border-color: #bbdefb !important;
+}
+
+.job-budget {
+  background: #e8f5e8 !important;
+  color: #2e7d32 !important;
+  border-color: #c8e6c9 !important;
+}
+
+.job-location {
+  background: #fff3e0 !important;
+  color: #f57c00 !important;
+  border-color: #ffcc02 !important;
+}
+
+.contractor-summary {
+  padding: 16px 24px;
+  background-color: #f0f8ff;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.contractor-summary h4 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.contractor-info p {
+  margin: 4px 0;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.contractor-info strong {
+  color: #2c3e50;
+}
+
+.payment-form {
+  padding: 24px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group small {
+  display: block;
+  margin-top: 4px;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-form-overlay {
+    padding: 10px;
+  }
+  
+  .payment-form-modal {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .modal-header {
+    padding: 16px 20px;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .job-summary,
+  .contractor-summary,
+  .payment-form {
+    padding: 16px 20px;
+  }
+  
+  .job-meta {
+    gap: 8px;
+  }
+  
+  .job-meta span {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-form-modal {
+    max-height: 95vh;
+  }
+  
+  .modal-header {
+    padding: 12px 16px;
+  }
+  
+  .job-summary,
+  .contractor-summary,
+  .payment-form {
+    padding: 12px 16px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+.razorpay-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(51, 153, 204, 0.15);
+  padding: 32px 28px 24px 28px;
+  max-width: 400px;
+  margin: 60px auto;
+  position: relative;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.razorpay-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.razorpay-logo {
+  height: 32px;
+}
+.razorpay-amount-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.razorpay-amount-label {
+  font-size: 14px;
+  color: #3399cc;
+  font-weight: 500;
+}
+.razorpay-amount {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.razorpay-desc {
+  color: #3399cc;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.razorpay-pay-btn {
+  background: #3399cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.razorpay-pay-btn:disabled {
+  background: #b3e0f7;
+  cursor: not-allowed;
+}
+.razorpay-cancel-btn {
+  background: none;
+  color: #3399cc;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.razorpay-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #3399cc;
+  opacity: 0.85;
+  justify-content: center;
+}
+.razorpay-badge img {
+  height: 18px;
+} 

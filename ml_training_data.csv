@@ -1,0 +1,82 @@
+job_id,contractor_id,job_title,job_desc,job_worktype,job_budget,job_location,job_required_skills,contractor_skills,completed_jobs,contractor_rating,contractor_experience,location_score,reliability_score,experience_score,skill_match_score,ai_score,skill_overlap,skill_overlap_pct,budget_diff,job_rating,job_review,is_selected
+686e49e78d33674b3ad81788,685fb145db3bf291b22c24f1,harvesting,do it,Harvesting,50000,mangalore,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686e49e78d33674b3ad81788,685cf27ac57626e1ce6d0ba9,harvesting,do it,Harvesting,50000,mangalore,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686e49e78d33674b3ad81788,68584ea079c97b60ed7c34ff,harvesting,do it,Harvesting,50000,mangalore,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686e4e03051ac0b3f56bde0e,685cf27ac57626e1ce6d0ba9,planting,"plantation
+",Planting,60000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,4.0,good work,1
+686e4e03051ac0b3f56bde0e,68584ea079c97b60ed7c34ff,planting,"plantation
+",Planting,60000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,4.0,good work,0
+686e4e03051ac0b3f56bde0e,685fb145db3bf291b22c24f1,planting,"plantation
+",Planting,60000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,4.0,good work,0
+686e8a0ef6282e7c5182f121,68584ea079c97b60ed7c34ff,irrigation,ok,Irrigation,30000,mangalore,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686e8a0ef6282e7c5182f121,685fb145db3bf291b22c24f1,irrigation,ok,Irrigation,30000,mangalore,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686e8a0ef6282e7c5182f121,685cf27ac57626e1ce6d0ba9,irrigation,ok,Irrigation,30000,mangalore,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686eae3eb5abfd66ea9c420a,68584ea079c97b60ed7c34ff,landscaping,"need to be done
+",Landscaping,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686eae3eb5abfd66ea9c420a,685cf27ac57626e1ce6d0ba9,landscaping,"need to be done
+",Landscaping,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686eae3eb5abfd66ea9c420a,685fb145db3bf291b22c24f1,landscaping,"need to be done
+",Landscaping,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f604b7958238ba7b3c811,68584ea079c97b60ed7c34ff,planting,pleasse complete,Planting,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f604b7958238ba7b3c811,685cf27ac57626e1ce6d0ba9,planting,pleasse complete,Planting,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f604b7958238ba7b3c811,685fb145db3bf291b22c24f1,planting,pleasse complete,Planting,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f61797958238ba7b3c8ed,68584ea079c97b60ed7c34ff,planting,yes will do ,Planting,60000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f61797958238ba7b3c8ed,685cf27ac57626e1ce6d0ba9,planting,yes will do ,Planting,60000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f61797958238ba7b3c8ed,685fb145db3bf291b22c24f1,planting,yes will do ,Planting,60000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f61797958238ba7b3c8ed,686f608d7958238ba7b3c83d,planting,yes will do ,Planting,60000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f66387958238ba7b3c980,68584ea079c97b60ed7c34ff,planting,plantation,Planting,60000,mangalore,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f66387958238ba7b3c980,685cf27ac57626e1ce6d0ba9,planting,plantation,Planting,60000,mangalore,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f66387958238ba7b3c980,685fb145db3bf291b22c24f1,planting,plantation,Planting,60000,mangalore,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f66387958238ba7b3c980,686f608d7958238ba7b3c83d,planting,plantation,Planting,60000,mangalore,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f66387958238ba7b3c980,686f65737958238ba7b3c95f,planting,plantation,Planting,60000,mangalore,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f67617958238ba7b3ca11,68584ea079c97b60ed7c34ff,planting,hii,Planting,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f67617958238ba7b3ca11,685cf27ac57626e1ce6d0ba9,planting,hii,Planting,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f67617958238ba7b3ca11,685fb145db3bf291b22c24f1,planting,hii,Planting,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f67617958238ba7b3ca11,686f608d7958238ba7b3c83d,planting,hii,Planting,50000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f67617958238ba7b3ca11,686f65737958238ba7b3c95f,planting,hii,Planting,50000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f72097958238ba7b3cac9,68584ea079c97b60ed7c34ff,harvesting,hey,Harvesting,30000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f72097958238ba7b3cac9,685cf27ac57626e1ce6d0ba9,harvesting,hey,Harvesting,30000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f72097958238ba7b3cac9,685fb145db3bf291b22c24f1,harvesting,hey,Harvesting,30000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f72097958238ba7b3cac9,686f608d7958238ba7b3c83d,harvesting,hey,Harvesting,30000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f72097958238ba7b3cac9,686f65737958238ba7b3c95f,harvesting,hey,Harvesting,30000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f7411ec99d94f34473ece,68584ea079c97b60ed7c34ff,irrigation,hi,Irrigation,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,,,0
+686f7411ec99d94f34473ece,685cf27ac57626e1ce6d0ba9,irrigation,hi,Irrigation,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,,,0
+686f7411ec99d94f34473ece,685fb145db3bf291b22c24f1,irrigation,hi,Irrigation,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,,,0
+686f7411ec99d94f34473ece,686f608d7958238ba7b3c83d,irrigation,hi,Irrigation,50000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f7411ec99d94f34473ece,686f65737958238ba7b3c95f,irrigation,hi,Irrigation,50000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,,,0
+686f7696cc1d16feb0e1086c,68584ea079c97b60ed7c34ff,plowing,dhf,Plowing,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,5.0,kkkj,0
+686f7696cc1d16feb0e1086c,685cf27ac57626e1ce6d0ba9,plowing,dhf,Plowing,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,5.0,kkkj,0
+686f7696cc1d16feb0e1086c,685fb145db3bf291b22c24f1,plowing,dhf,Plowing,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,5.0,kkkj,0
+686f7696cc1d16feb0e1086c,686f608d7958238ba7b3c83d,plowing,dhf,Plowing,50000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,5.0,kkkj,1
+686f7696cc1d16feb0e1086c,686f65737958238ba7b3c95f,plowing,dhf,Plowing,50000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,5.0,kkkj,0
+686f77e697737b948ddc8ea8,68584ea079c97b60ed7c34ff,harvesting,dfsdf,Harvesting,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,5.0,aedsd,0
+686f77e697737b948ddc8ea8,685cf27ac57626e1ce6d0ba9,harvesting,dfsdf,Harvesting,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,5.0,aedsd,0
+686f77e697737b948ddc8ea8,685fb145db3bf291b22c24f1,harvesting,dfsdf,Harvesting,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,5.0,aedsd,0
+686f77e697737b948ddc8ea8,686f608d7958238ba7b3c83d,harvesting,dfsdf,Harvesting,50000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,5.0,aedsd,1
+686f77e697737b948ddc8ea8,686f65737958238ba7b3c95f,harvesting,dfsdf,Harvesting,50000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,5.0,aedsd,0
+686f78ed97737b948ddc8f18,68584ea079c97b60ed7c34ff,plant,zcxzczxcz,Planting,45439,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,5.0,aiuf,0
+686f78ed97737b948ddc8f18,685cf27ac57626e1ce6d0ba9,plant,zcxzczxcz,Planting,45439,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,5.0,aiuf,0
+686f78ed97737b948ddc8f18,685fb145db3bf291b22c24f1,plant,zcxzczxcz,Planting,45439,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,5.0,aiuf,0
+686f78ed97737b948ddc8f18,686f608d7958238ba7b3c83d,plant,zcxzczxcz,Planting,45439,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,5.0,aiuf,1
+686f78ed97737b948ddc8f18,686f65737958238ba7b3c95f,plant,zcxzczxcz,Planting,45439,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,5.0,aiuf,0
+686f7a9929c7eba5bbb478fc,68584ea079c97b60ed7c34ff,plowing,jfgkjfd,Plowing,55000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,3.0,se,0
+686f7a9929c7eba5bbb478fc,685cf27ac57626e1ce6d0ba9,plowing,jfgkjfd,Plowing,55000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,3.0,se,0
+686f7a9929c7eba5bbb478fc,685fb145db3bf291b22c24f1,plowing,jfgkjfd,Plowing,55000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,3.0,se,0
+686f7a9929c7eba5bbb478fc,686f608d7958238ba7b3c83d,plowing,jfgkjfd,Plowing,55000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,3.0,se,1
+686f7a9929c7eba5bbb478fc,686f65737958238ba7b3c95f,plowing,jfgkjfd,Plowing,55000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,3.0,se,0
+686f7b8820468d6f53a0609c,68584ea079c97b60ed7c34ff,p,feaf,Harvesting,50000,karnataka,,,0,0,0,20,0,0,0,23,0,0,0,4.0,nsdvbjk,0
+686f7b8820468d6f53a0609c,685cf27ac57626e1ce6d0ba9,p,feaf,Harvesting,50000,karnataka,,,1,0,1,20,0,0,0,23,0,0,0,4.0,nsdvbjk,0
+686f7b8820468d6f53a0609c,685fb145db3bf291b22c24f1,p,feaf,Harvesting,50000,karnataka,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,4.0,nsdvbjk,0
+686f7b8820468d6f53a0609c,686f608d7958238ba7b3c83d,p,feaf,Harvesting,50000,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,4.0,nsdvbjk,1
+686f7b8820468d6f53a0609c,686f65737958238ba7b3c95f,p,feaf,Harvesting,50000,karnataka,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,4.0,nsdvbjk,0
+6870abfdbe0a94bba7969e53,68584ea079c97b60ed7c34ff,planting,fddsfsfsf,Planting,50000,mangalore,,,0,0,0,20,0,0,0,23,0,0,0,4.0,b.kjxz,0
+6870abfdbe0a94bba7969e53,685cf27ac57626e1ce6d0ba9,planting,fddsfsfsf,Planting,50000,mangalore,,,1,0,1,20,0,0,0,23,0,0,0,4.0,b.kjxz,0
+6870abfdbe0a94bba7969e53,685fb145db3bf291b22c24f1,planting,fddsfsfsf,Planting,50000,mangalore,,planting|harvesting,0,0,5,20,0,44,0,30,0,0,0,4.0,b.kjxz,0
+6870abfdbe0a94bba7969e53,686f608d7958238ba7b3c83d,planting,fddsfsfsf,Planting,50000,mangalore,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,4.0,b.kjxz,0
+6870abfdbe0a94bba7969e53,686f65737958238ba7b3c95f,planting,fddsfsfsf,Planting,50000,mangalore,,planting|harvesting,0,0,0,0,0,0,0,0,0,0,0,4.0,b.kjxz,1
+68793ff14386b6fe60ee1061,686f608d7958238ba7b3c83d,plowing,"the work need to be easily
+",Plowing,0,mangalore,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+687942ed4386b6fe60ee10fd,686f608d7958238ba7b3c83d,planting,yes they do ,Planting,0,mangalore,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+6879ce9a4771ea695e249716,686f608d7958238ba7b3c83d,weeding,weeding,Weeding,0,mangalore,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0
+6879d08b4771ea695e24974b,686f608d7958238ba7b3c83d,planting,"planting
+",Planting,0,karnataka,,plowing|planting,0,0,0,0,0,0,0,0,0,0,0,,,0

@@ -1,0 +1,2681 @@
+[{
+  "_id": {
+    "$oid": "685810be79c97b60ed7c347f"
+  },
+  "title": "hi",
+  "description": "ddfsdf",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-22T14:18:38.840Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-22T14:18:38.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6858437f79c97b60ed7c34a9"
+  },
+  "title": "jhyjgj",
+  "description": "jhvhj",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-22T17:55:11.186Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-22T17:55:11.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68584b0a79c97b60ed7c34da"
+  },
+  "title": "dsas",
+  "description": "sdsds",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-22T18:27:22.880Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-22T18:27:22.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68584bc779c97b60ed7c34e0"
+  },
+  "title": "xcx",
+  "description": "xxz",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-22T18:30:31.917Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-22T18:30:31.917Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68584c4c79c97b60ed7c34e5"
+  },
+  "title": "ss",
+  "description": "ss",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-22T18:32:44.443Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-22T18:32:44.443Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6858da44d11e1b338ae2cb0c"
+  },
+  "title": "kkkk",
+  "description": "lkljdlkfkd",
+  "postedBy": {
+    "$oid": "6858d9e6d11e1b338ae2cb09"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-23T04:38:28.307Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-23T04:38:28.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6858f6c5bbd9f313a300dda0"
+  },
+  "title": "def",
+  "description": "sfsdfs",
+  "postedBy": {
+    "$oid": "6858f6b5bbd9f313a300dd9d"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "status": "open",
+  "createdAt": {
+    "$date": "2025-06-23T06:40:05.752Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-23T06:40:05.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686004dc25168e948a7c0a39"
+  },
+  "title": "wehfiru",
+  "description": "dhfsdfjdshfoisdfoisfoius",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    }
+  ],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 10,
+  "location": "karnataka",
+  "workType": "Planting",
+  "budget": 100000,
+  "startDate": {
+    "$date": "2025-06-29T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-06-16T00:00:00.000Z"
+  },
+  "images": [],
+  "createdAt": {
+    "$date": "2025-06-28T15:06:04.528Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T17:38:59.084Z"
+  },
+  "__v": 2,
+  "aiShortlistDate": {
+    "$date": "2025-06-28T22:32:18.142Z"
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68606d72401c7711a0c412e9"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68606d72401c7711a0c412ea"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68606d72401c7711a0c412eb"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68606d72401c7711a0c412ec"
+      }
+    }
+  ],
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "coordinates": [],
+    "type": "Point"
+  },
+  "priority": "medium",
+  "requiredSkills": [],
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  }
+},
+{
+  "_id": {
+    "$oid": "6860de7b2057eeefe2dc6089"
+  },
+  "title": "plowing",
+  "description": "dfsfdsfdsfsdfsdf",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    }
+  ],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 10,
+  "location": "karnataka",
+  "workType": "Planting",
+  "budget": 50000,
+  "startDate": {
+    "$date": "2025-06-30T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-16T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860decdd9c5ed5ecd98c037"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860decdd9c5ed5ecd98c038"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860decdd9c5ed5ecd98c039"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860decdd9c5ed5ecd98c03a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T06:34:35.650Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T10:58:35.569Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T06:35:57.555Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  }
+},
+{
+  "_id": {
+    "$oid": "6860dfdad9c5ed5ecd98c05d"
+  },
+  "title": "plowing",
+  "description": "hello",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "goa",
+  "workType": "Plowing",
+  "budget": 10000,
+  "startDate": {
+    "$date": "2025-06-29T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-24T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860dfdad9c5ed5ecd98c065"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860dfdad9c5ed5ecd98c066"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860dfdad9c5ed5ecd98c067"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860dfdad9c5ed5ecd98c068"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T06:40:26.475Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T10:48:47.728Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T06:40:26.514Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  }
+},
+{
+  "_id": {
+    "$oid": "6860e0def322faa8dbc79460"
+  },
+  "title": "plowiing",
+  "description": "d",
+  "postedBy": {
+    "$oid": "685cf191c57626e1ce6d0b9e"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "india",
+  "workType": "Harvesting",
+  "budget": 160000,
+  "startDate": {
+    "$date": "2025-06-30T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-06-19T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e0def322faa8dbc79468"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e0def322faa8dbc79469"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e0def322faa8dbc7946a"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e0def322faa8dbc7946b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T06:44:46.450Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-30T08:07:23.106Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T06:44:46.564Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  },
+  "rating": 5,
+  "review": "5"
+},
+{
+  "_id": {
+    "$oid": "6860e43ff322faa8dbc79473"
+  },
+  "title": "plowing",
+  "description": "vbvcbcvbcb",
+  "postedBy": {
+    "$oid": "6860e3e5f322faa8dbc7946f"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "in_progress",
+  "landSize": 5,
+  "location": "goa",
+  "workType": "Plowing",
+  "budget": 45565,
+  "startDate": {
+    "$date": "2025-07-19T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-30T00:00:00.000Z"
+  },
+  "images": [
+    "uploads\\1751180351777-764900227.jpg"
+  ],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e43ff322faa8dbc7947b"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e43ff322faa8dbc7947c"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e43ff322faa8dbc7947d"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e43ff322faa8dbc7947e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T06:59:11.789Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-30T18:54:42.052Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T06:59:11.820Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "isFeedbackGiven": false,
+  "isPaid": false
+},
+{
+  "_id": {
+    "$oid": "6860e5df3cc394519149f496"
+  },
+  "title": "plowing",
+  "description": "bgfbgfbbgf",
+  "postedBy": {
+    "$oid": "6860e3e5f322faa8dbc7946f"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "open",
+  "landSize": 15,
+  "location": "india",
+  "workType": "Harvesting",
+  "budget": 25253,
+  "startDate": {
+    "$date": "2025-06-29T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-06-24T00:00:00.000Z"
+  },
+  "images": [
+    "uploads\\1751180767806-157909229.png"
+  ],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e5df3cc394519149f49e"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e5df3cc394519149f49f"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e5df3cc394519149f4a0"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e5df3cc394519149f4a1"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T07:06:07.822Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T07:06:07.963Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T07:06:07.960Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6860e7a889e54114b5ba32b0"
+  },
+  "title": "tree plantation",
+  "description": "eregegeg",
+  "postedBy": {
+    "$oid": "6860e3e5f322faa8dbc7946f"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 45,
+  "location": "karnataka",
+  "workType": "Planting",
+  "budget": 52252,
+  "startDate": {
+    "$date": "2025-06-29T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-31T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e7a889e54114b5ba32b8"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e7a889e54114b5ba32b9"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e7a889e54114b5ba32ba"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860e7a889e54114b5ba32bb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T07:13:44.764Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-30T00:09:24.123Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T07:13:44.873Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  }
+},
+{
+  "_id": {
+    "$oid": "6860eb72272601174a1b9806"
+  },
+  "title": "plantation",
+  "description": "ddfsdfdsfds",
+  "postedBy": {
+    "$oid": "6860e3e5f322faa8dbc7946f"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "india",
+  "workType": "Harvesting",
+  "budget": 25565,
+  "startDate": {
+    "$date": "2025-07-03T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-12T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860eb72272601174a1b980e"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860eb72272601174a1b980f"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860eb72272601174a1b9810"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6860eb72272601174a1b9811"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-29T07:29:54.146Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T17:14:00.809Z"
+  },
+  "__v": 3,
+  "aiShortlistDate": {
+    "$date": "2025-06-29T07:29:54.254Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  }
+},
+{
+  "_id": {
+    "$oid": "6862dca1bd64ff6dcedac782"
+  },
+  "title": "ldj",
+  "description": "ndfnkdnsdk",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    },
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    }
+  ],
+  "status": "completed",
+  "landSize": 25,
+  "location": "punjab",
+  "workType": "Harvesting",
+  "budget": 56000,
+  "startDate": {
+    "$date": "2025-07-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-10T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6862dca1bd64ff6dcedac78a"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6862dca1bd64ff6dcedac78b"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6862dca1bd64ff6dcedac78c"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6862dca1bd64ff6dcedac78d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-06-30T18:51:13.888Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-01T10:07:19.792Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-06-30T18:51:13.998Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "rating": 5,
+  "review": "ok"
+},
+{
+  "_id": {
+    "$oid": "6863a49fe6eafbc5e524f3f8"
+  },
+  "title": "plowing",
+  "description": "ok",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 10,
+  "location": "karnataka",
+  "workType": "Plowing",
+  "budget": 49998,
+  "startDate": {
+    "$date": "2025-07-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-03T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "6863a49fe6eafbc5e524f401"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863a49fe6eafbc5e524f402"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863a49fe6eafbc5e524f403"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863a49fe6eafbc5e524f404"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-01T09:04:31.256Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-01T10:06:41.820Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-01T09:04:31.353Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "rating": 5,
+  "review": "he is good"
+},
+{
+  "_id": {
+    "$oid": "6863ea59810787f9f75aee07"
+  },
+  "title": "last job",
+  "description": "yes lost job",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "mangalore",
+  "workType": "Planting",
+  "budget": 45000,
+  "startDate": {
+    "$date": "2025-07-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "6863ea59810787f9f75aee10"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863ea59810787f9f75aee11"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863ea59810787f9f75aee12"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863ea59810787f9f75aee13"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-01T14:02:01.516Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-01T14:06:14.113Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-01T14:02:01.626Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  },
+  "rating": 5,
+  "review": "hgesj"
+},
+{
+  "_id": {
+    "$oid": "6863eb18810787f9f75af029"
+  },
+  "title": "hmm",
+  "description": "jhghjv",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "685842ae79c97b60ed7c3499"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "in_progress",
+  "landSize": 52,
+  "location": "india",
+  "workType": "Planting",
+  "budget": 55553,
+  "startDate": {
+    "$date": "2025-07-05T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-25T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "6863eb18810787f9f75af032"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863eb18810787f9f75af033"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685842ae79c97b60ed7c3499"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863eb18810787f9f75af034"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6863eb18810787f9f75af035"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-01T14:05:12.065Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-01T14:05:16.048Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-01T14:05:12.088Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  }
+},
+{
+  "_id": {
+    "$oid": "6864fa797369871112275232"
+  },
+  "title": "plowing",
+  "description": "djdfkdj",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "karnataka",
+  "workType": "Plowing",
+  "budget": 49999,
+  "startDate": {
+    "$date": "2025-07-02T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-10T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "6864fa79736987111227523b"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6864fa79736987111227523c"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "6864fa79736987111227523d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-02T09:23:05.064Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-02T09:27:40.664Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-02T09:23:05.176Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "rating": 5,
+  "review": "okk"
+},
+{
+  "_id": {
+    "$oid": "68660c2fe0a610689495ec22"
+  },
+  "title": "planting",
+  "description": "hi ",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 56,
+  "location": "india",
+  "workType": "Harvesting",
+  "budget": 49999,
+  "startDate": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "68660c2fe0a610689495ec2b"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68660c2fe0a610689495ec2c"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68660c2fe0a610689495ec2d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-03T04:50:55.485Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-03T05:02:32.332Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-03T04:50:55.579Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  },
+  "rating": 5,
+  "review": "bullshit"
+},
+{
+  "_id": {
+    "$oid": "68660ffae0a610689495f9de"
+  },
+  "title": "hi",
+  "description": "hi",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "open",
+  "landSize": 15,
+  "location": "karnataka",
+  "workType": "Harvesting",
+  "budget": 45665,
+  "startDate": {
+    "$date": "2025-07-04T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-05T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "68660ffae0a610689495f9e7"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68660ffae0a610689495f9e8"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "68660ffae0a610689495f9e9"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-03T05:07:06.421Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-03T05:07:37.331Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-03T05:07:06.445Z"
+  },
+  "selectedContractor": null
+},
+{
+  "_id": {
+    "$oid": "686610b3e0a610689495fb87"
+  },
+  "title": "jhhjoj",
+  "description": "wddqe",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 3434,
+  "location": "efwf",
+  "workType": "Irrigation",
+  "budget": 43423,
+  "startDate": {
+    "$date": "2025-07-16T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-25T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686610b3e0a610689495fb90"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686610b3e0a610689495fb91"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686610b3e0a610689495fb92"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-03T05:10:11.800Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-05T05:20:57.370Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-03T05:10:11.824Z"
+  },
+  "selectedContractor": {
+    "$oid": "68584ea079c97b60ed7c34ff"
+  },
+  "rating": 5,
+  "review": "5"
+},
+{
+  "_id": {
+    "$oid": "686611e0e0a610689495fc34"
+  },
+  "title": "adfsg",
+  "description": "fsdfsd",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 434,
+  "location": "dgsg",
+  "workType": "Irrigation",
+  "budget": 53545,
+  "startDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-25T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686611e0e0a610689495fc3d"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686611e0e0a610689495fc3e"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686611e0e0a610689495fc3f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-03T05:15:12.572Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-03T05:22:36.448Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-03T05:15:12.590Z"
+  },
+  "selectedContractor": {
+    "$oid": "68584ea079c97b60ed7c34ff"
+  },
+  "rating": 5,
+  "review": "hghjghjg"
+},
+{
+  "_id": {
+    "$oid": "686b62cb029ca6fab8c30387"
+  },
+  "title": "plowing",
+  "description": "jhghghjghj",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "in_progress",
+  "landSize": 15,
+  "location": "mangalore",
+  "workType": "Plowing",
+  "budget": 50000,
+  "startDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-15T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686b62cb029ca6fab8c30390"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686b62cb029ca6fab8c30391"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686b62cb029ca6fab8c30392"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-07T06:01:47.107Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T06:01:53.921Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-07T06:01:47.249Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  }
+},
+{
+  "_id": {
+    "$oid": "686b8e0b301c5715b162b2dc"
+  },
+  "title": "plowing",
+  "description": "hello",
+  "postedBy": {
+    "$oid": "686b8d81301c5715b162b2a7"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 15,
+  "location": "mangalore",
+  "workType": "Plowing",
+  "budget": 50000,
+  "startDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-10T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686b8e0c301c5715b162b2e5"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686b8e0c301c5715b162b2e6"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686b8e0c301c5715b162b2e7"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-07T09:06:19.942Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T09:16:21.748Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-07T09:06:20.044Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "rating": 5,
+  "review": "y"
+},
+{
+  "_id": {
+    "$oid": "686bab931fff789756f61a01"
+  },
+  "title": "plowing",
+  "description": "hi",
+  "postedBy": {
+    "$oid": "686b8d81301c5715b162b2a7"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "in_progress",
+  "landSize": 5,
+  "location": "mangalore",
+  "workType": "Plowing",
+  "budget": 50000,
+  "startDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-15T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686bab931fff789756f61a0a"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686bab931fff789756f61a0b"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686bab931fff789756f61a0c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-07T11:12:19.470Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T11:13:00.041Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-07T11:12:19.560Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  }
+},
+{
+  "_id": {
+    "$oid": "686bae501fff789756f61b3c"
+  },
+  "title": "planting",
+  "description": "hello",
+  "postedBy": {
+    "$oid": "686bad0e1fff789756f61b1d"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "completed",
+  "landSize": 5,
+  "location": "mangalore",
+  "workType": "Planting",
+  "budget": 55000,
+  "startDate": {
+    "$date": "2025-07-08T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-12T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "isPaid": true,
+  "isFeedbackGiven": true,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686bae501fff789756f61b45"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686bae501fff789756f61b46"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686bae501fff789756f61b47"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-07T11:24:00.519Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T11:29:29.455Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-07T11:24:00.543Z"
+  },
+  "selectedContractor": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  },
+  "rating": 4,
+  "review": "good"
+},
+{
+  "_id": {
+    "$oid": "686c81f8ce62484d041ef10b"
+  },
+  "title": "plowing",
+  "description": "finish the work",
+  "postedBy": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "applicants": [],
+  "shortlisted": [],
+  "aiShortlisted": [
+    {
+      "$oid": "685cf27ac57626e1ce6d0ba9"
+    },
+    {
+      "$oid": "685fb145db3bf291b22c24f1"
+    },
+    {
+      "$oid": "68584ea079c97b60ed7c34ff"
+    }
+  ],
+  "status": "in_progress",
+  "landSize": 2,
+  "location": "karnataka",
+  "workType": "Plowing",
+  "budget": 29999,
+  "startDate": {
+    "$date": "2025-07-09T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2025-07-10T00:00:00.000Z"
+  },
+  "images": [],
+  "requiredSkills": [],
+  "priority": "medium",
+  "complexity": "moderate",
+  "locationCoordinates": {
+    "type": "Point",
+    "coordinates": []
+  },
+  "aiShortlistGenerated": true,
+  "wasAISelected": false,
+  "aiSuccessRate": 0,
+  "isPaid": false,
+  "isFeedbackGiven": false,
+  "aiShortlistScores": [
+    {
+      "contractorId": {
+        "$oid": "685cf27ac57626e1ce6d0ba9"
+      },
+      "overallScore": 39,
+      "skillMatchScore": 0,
+      "reliabilityScore": 30,
+      "experienceScore": 55,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements. Good experience level for this type of work",
+      "_id": {
+        "$oid": "686c81f8ce62484d041ef114"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "685fb145db3bf291b22c24f1"
+      },
+      "overallScore": 30,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 44,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686c81f8ce62484d041ef115"
+      }
+    },
+    {
+      "contractorId": {
+        "$oid": "68584ea079c97b60ed7c34ff"
+      },
+      "overallScore": 23,
+      "skillMatchScore": 0,
+      "reliabilityScore": 0,
+      "experienceScore": 0,
+      "locationScore": 20,
+      "budgetScore": 100,
+      "explanation": "Limited skill overlap with job requirements. Budget range perfectly matches job requirements",
+      "_id": {
+        "$oid": "686c81f8ce62484d041ef116"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2025-07-08T02:27:04.283Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-08T02:27:17.307Z"
+  },
+  "__v": 1,
+  "aiShortlistDate": {
+    "$date": "2025-07-08T02:27:04.385Z"
+  },
+  "selectedContractor": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  }
+}]

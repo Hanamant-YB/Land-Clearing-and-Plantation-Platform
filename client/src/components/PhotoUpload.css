@@ -1,0 +1,112 @@
+/* PhotoUpload.css */
+
+/* Container */
+.photo-upload {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+  background-color: #fafafa;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons: picker & upload */
+.photo-upload-picker,
+.photo-upload-button {
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, opacity 0.2s;
+}
+
+/* Choose/Change Photo */
+.photo-upload-picker {
+  background-color: #2563eb;
+  color: #fff;
+}
+.photo-upload-picker:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+.photo-upload-picker:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Upload Photo */
+.photo-upload-button {
+  background-color: #28a745;
+  color: #fff;
+}
+.photo-upload-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+.photo-upload-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.photo-upload-button:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Preview thumbnail */
+.photo-preview {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Clear (“×”) button */
+.photo-clear {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 1;
+}
+.photo-clear:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .photo-upload {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .photo-upload-picker,
+  .photo-upload-button {
+    width: 100%;
+    text-align: center;
+  }
+  .photo-preview {
+    margin-top: 12px;
+  }
+}

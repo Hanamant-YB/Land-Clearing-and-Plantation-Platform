@@ -1,0 +1,500 @@
+[{
+  "_id": {
+    "$oid": "685810ad79c97b60ed7c347b"
+  },
+  "name": "abhi",
+  "email": "a@gmail.com",
+  "password": "$2a$10$BOkVgsVM3lwRVhw8Z6l1luhTchRAr2WPiDpfQIly5ficqyb5W8Ppi",
+  "role": "landowner",
+  "__v": 0,
+  "profile": {
+    "photo": "/uploads/1751095590851-307989159.jpg"
+  },
+  "updatedAt": {
+    "$date": "2025-06-28T15:04:37.589Z"
+  },
+  "address": "mangalore",
+  "phone": "70019936516"
+},
+{
+  "_id": {
+    "$oid": "68584ea079c97b60ed7c34ff"
+  },
+  "name": "k",
+  "email": "k@gmail.com",
+  "password": "$2a$10$vMRIjUYCERGMtHkyFuSW0Onjnhmq1JLtLqIReXklhEPjOvJ4o6iNO",
+  "role": "contractor",
+  "__v": 0,
+  "profile": {
+    "photo": "/uploads/1750618260504-logistics2.jpg",
+    "aiScore": 23,
+    "budgetCompatibility": 100,
+    "experienceScore": 0,
+    "locationScore": 20,
+    "qualityScore": 0,
+    "reliabilityScore": 0,
+    "skillMatchScore": 0
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T06:35:57.581Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6858d9e6d11e1b338ae2cb09"
+  },
+  "name": "keerthiraj",
+  "email": "kee@gmail.com",
+  "password": "$2a$10$a1mgM0JtmqzNJNL9sfyH4.QJJi/lGYfnp1LME7ujCsGsMhx.nCfya",
+  "role": "landowner",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6858daa3d11e1b338ae2cb10"
+  },
+  "name": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$0nxziqmpmbya/tqAClZAwOIkn3ktd49AIo42fiaV17kniWteDeu4C",
+  "role": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685cf0d7c57626e1ce6d0b9c"
+  },
+  "name": "shafeer",
+  "email": "s@gmail.com",
+  "password": "$2a$10$CR1tmOcG5s6KjDn/Lfug3ebf.ofWO6p5rWsinOvuCuyV6sPt41OTq",
+  "role": "landowner",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685cf191c57626e1ce6d0b9e"
+  },
+  "name": "pavan",
+  "email": "p@gmail.com",
+  "password": "$2a$10$6Y/Knl/PBj/.ppZguD9KS.Mgug6N8ItaztBxxjE3nY.OGZLF8u9bC",
+  "role": "landowner",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685cf255c57626e1ce6d0ba6"
+  },
+  "name": "hemant",
+  "email": "hm@gmail.com",
+  "password": "$2a$10$rBJjjpUij0Ezjx.MF0dSFeYNgSqyQqDkftr1Bxhr/SNfMAbVmug6i",
+  "role": "landowner",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "685cf27ac57626e1ce6d0ba9"
+  },
+  "name": "dilan",
+  "email": "d@gmail.com",
+  "password": "$2a$10$1ScwzFohsFWwxjBHP1CevuBF6cY8R0PRsGtmp4FlhpWIC7yoZFQfi",
+  "role": "contractor",
+  "__v": 0,
+  "profile": {
+    "photo": "/uploads/1751038131883-sunset-7731330.png",
+    "bio": "Hi, I'm dilan with over 0 completed jobs and 0 pending tasks. I specialize in delivering high-quality work and ensuring customer satisfaction. With years of experience in the industry, I'm committed to completing projects on time and within budget. Feel free to reach out for any construction or renovation needs!",
+    "aiScore": 23,
+    "budgetCompatibility": 100,
+    "experienceScore": 0,
+    "locationScore": 20,
+    "qualityScore": 0,
+    "reliabilityScore": 0,
+    "skillMatchScore": 0,
+    "completedJobs": 1,
+    "pastJobs": [
+      {
+        "title": "ldj",
+        "type": "Harvesting",
+        "description": "ndfnkdnsdk",
+        "budget": 56000,
+        "date": {
+          "$date": "2025-06-30T19:18:01.168Z"
+        },
+        "rating": 5,
+        "photos": [
+          "http://localhost:5000/uploads/1751309661548-357599579.png",
+          "http://localhost:5000/uploads/1751309661548-357599579.png",
+          "http://localhost:5000/uploads/1751309661548-357599579.png"
+        ],
+        "landownerFeedback": "good",
+        "landownerName": "abhi",
+        "landownerEmail": "a@gmail.com",
+        "jobId": {
+          "$oid": "6862dca1bd64ff6dcedac782"
+        },
+        "location": "punjab",
+        "landSize": 25,
+        "startDate": {
+          "$date": "2025-07-01T00:00:00.000Z"
+        },
+        "endDate": {
+          "$date": "2025-07-10T00:00:00.000Z"
+        },
+        "completionDate": {
+          "$date": "2025-06-30T19:18:01.168Z"
+        },
+        "_id": {
+          "$oid": "6862e39b52278e4e85f3d5d4"
+        }
+      }
+    ]
+  },
+  "address": "sads",
+  "phone": "70019936516",
+  "updatedAt": {
+    "$date": "2025-06-30T19:20:59.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "685fb145db3bf291b22c24f1"
+  },
+  "name": "santo",
+  "email": "santo@gmail.com",
+  "password": "$2a$10$CYV1a5tujHNKIFJIf16BVeOnhCNcXc.r8S7Zaw.QhWNeIVD8yU4Qi",
+  "role": "contractor",
+  "phone": "45645464665",
+  "address": "efwerge",
+  "profile": {
+    "photo": "/uploads/1751123375112-798330765.jpg",
+    "bio": "",
+    "rating": 0,
+    "completedJobs": 0,
+    "pendingJobs": 0,
+    "activeJobs": 0,
+    "postedJobs": 0,
+    "totalSpent": 0,
+    "availability": "Available",
+    "avgBudget": 25000,
+    "skills": [
+      "harvesting",
+      "planting"
+    ],
+    "pastJobs": [
+      {
+        "title": "Farm Plowing Project",
+        "type": "Plowing",
+        "description": "Completed 50-acre farm plowing with modern equipment",
+        "budget": 5000,
+        "date": {
+          "$date": "2025-06-28T00:00:00.000Z"
+        },
+        "rating": 5,
+        "feedback": "Excellent work, very professional",
+        "_id": {
+          "$oid": "685fb97025047ce6d6142c81"
+        },
+        "landownerFeedback": "",
+        "photos": [
+          "http://localhost:5000/uploads/1751105003884-170174939.png",
+          "http://localhost:5000/uploads/1751105003898-768586551.png",
+          "http://localhost:5000/uploads/1751105003918-437993720.jpg"
+        ]
+      },
+      {
+        "title": "jjkd",
+        "type": "Plowing",
+        "description": "Completed 50-acre farm plowing with modern equipment",
+        "budget": 10000,
+        "date": {
+          "$date": "2025-06-30T00:00:00.000Z"
+        },
+        "rating": 4,
+        "feedback": "Excellent work, very professional",
+        "_id": {
+          "$oid": "685fb9db25047ce6d6142ca2"
+        },
+        "landownerFeedback": "",
+        "photos": [
+          "http://localhost:5000/uploads/1751107022794-753168244.png",
+          "http://localhost:5000/uploads/1751107022802-64030005.png",
+          "http://localhost:5000/uploads/1751107022810-208462941.png"
+        ]
+      },
+      {
+        "title": "djfskd",
+        "type": "dfd",
+        "description": "kdksljfkd",
+        "budget": 35464,
+        "date": {
+          "$date": "2025-07-17T00:00:00.000Z"
+        },
+        "rating": 5,
+        "photos": [
+          "http://localhost:5000/uploads/1751107071601-739139508.jpg",
+          "http://localhost:5000/uploads/1751107071615-87760045.jpg",
+          "http://localhost:5000/uploads/1751107071623-923614297.jpg"
+        ],
+        "landownerFeedback": "",
+        "_id": {
+          "$oid": "685fc4a26a5024d55da6920d"
+        }
+      },
+      {
+        "title": "dh",
+        "type": "fgdf",
+        "description": "dsfsdf",
+        "budget": 100000,
+        "date": {
+          "$date": "2025-07-31T00:00:00.000Z"
+        },
+        "rating": 4,
+        "photos": [
+          "http://localhost:5000/uploads/1751120270051-932119377.png",
+          "http://localhost:5000/uploads/1751120270067-716499823.png",
+          "http://localhost:5000/uploads/1751120270079-675576086.png"
+        ],
+        "landownerFeedback": "hojodsfjdhksjdflkjfkdsjfllkdjfljfi",
+        "_id": {
+          "$oid": "685ff98e25168e948a7c09ad"
+        }
+      },
+      {
+        "title": "dfhdsfh",
+        "type": "dfhsdjf",
+        "description": "dkfhsdhfo",
+        "budget": 56000,
+        "date": {
+          "$date": "2025-06-30T00:00:00.000Z"
+        },
+        "rating": 4,
+        "photos": [
+          "http://localhost:5000/uploads/1751123652184-354180840.jpg",
+          "http://localhost:5000/uploads/1751123652195-479652872.png",
+          "http://localhost:5000/uploads/1751123652207-288300444.png"
+        ],
+        "landownerFeedback": "dgddjsdhj",
+        "_id": {
+          "$oid": "686006c425168e948a7c0a89"
+        }
+      }
+    ],
+    "aiScore": 30,
+    "budgetCompatibility": 100,
+    "experienceScore": 44,
+    "locationScore": 20,
+    "qualityScore": 0,
+    "reliabilityScore": 0,
+    "skillMatchScore": 0
+  },
+  "createdAt": {
+    "$date": "2025-06-28T09:09:25.955Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-30T06:55:47.277Z"
+  },
+  "__v": 0,
+  "username": ""
+},
+{
+  "_id": {
+    "$oid": "6860e3e5f322faa8dbc7946f"
+  },
+  "name": "z",
+  "email": "z@gmail.com",
+  "password": "$2a$10$rs0YgMgz1PqvBnPILl0GiuxwxXywSehjDgFjDHeXo8Q6IzECDZNz2",
+  "role": "landowner",
+  "phone": "",
+  "address": "",
+  "username": "z",
+  "profile": {
+    "location": {
+      "type": "Point",
+      "coordinates": []
+    },
+    "photo": "",
+    "bio": "",
+    "skills": [],
+    "availability": "Available",
+    "rating": 0,
+    "completedJobs": 0,
+    "pendingJobs": 0,
+    "activeJobs": 0,
+    "postedJobs": 0,
+    "totalSpent": 0,
+    "aiScore": 0,
+    "skillMatchScore": 0,
+    "reliabilityScore": 0,
+    "experienceScore": 0,
+    "locationScore": 0,
+    "budgetCompatibility": 0,
+    "responseTime": 0,
+    "cancellationRate": 0,
+    "onTimeCompletion": 0,
+    "qualityScore": 0,
+    "preferredWorkTypes": [],
+    "minBudget": 0,
+    "maxBudget": 999999,
+    "maxDistance": 50,
+    "pastJobs": [],
+    "shortlistHistory": []
+  },
+  "createdAt": {
+    "$date": "2025-06-29T06:57:41.677Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-29T06:57:41.677Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68621f2eed07bdeee40b00f5"
+  },
+  "name": "steevan",
+  "email": "steevan@gmail.com",
+  "password": "$2a$10$uCqRaVa.11uuZxQD5VbtNOEsxIssM3iu.3yeTO8Mf4SSlw4I7M4z2",
+  "role": "landowner",
+  "phone": "45645464665",
+  "address": "mangalore",
+  "username": "steevan",
+  "profile": {
+    "location": {
+      "type": "Point",
+      "coordinates": []
+    },
+    "photo": "/uploads/1751261059985-605775762.jpg",
+    "bio": "",
+    "skills": [],
+    "availability": "Available",
+    "rating": 0,
+    "completedJobs": 0,
+    "pendingJobs": 0,
+    "activeJobs": 0,
+    "postedJobs": 0,
+    "totalSpent": 0,
+    "aiScore": 0,
+    "skillMatchScore": 0,
+    "reliabilityScore": 0,
+    "experienceScore": 0,
+    "locationScore": 0,
+    "budgetCompatibility": 0,
+    "responseTime": 0,
+    "cancellationRate": 0,
+    "onTimeCompletion": 0,
+    "qualityScore": 0,
+    "preferredWorkTypes": [],
+    "minBudget": 0,
+    "maxBudget": 999999,
+    "maxDistance": 50,
+    "pastJobs": [],
+    "shortlistHistory": []
+  },
+  "createdAt": {
+    "$date": "2025-06-30T05:22:54.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-30T05:24:19.992Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686b8d81301c5715b162b2a7"
+  },
+  "name": "milan",
+  "email": "m@gmail.com",
+  "password": "$2a$10$D4MgDMEOR1OEucMAvXs6XewoTqJNSvXr3DyVPlLQX8.7M.Q.BpYt2",
+  "role": "landowner",
+  "phone": "",
+  "address": "",
+  "username": "milan",
+  "profile": {
+    "location": {
+      "type": "Point",
+      "coordinates": []
+    },
+    "photo": "",
+    "bio": "",
+    "skills": [],
+    "availability": "Available",
+    "rating": 0,
+    "completedJobs": 0,
+    "pendingJobs": 0,
+    "activeJobs": 0,
+    "postedJobs": 0,
+    "totalSpent": 0,
+    "aiScore": 0,
+    "skillMatchScore": 0,
+    "reliabilityScore": 0,
+    "experienceScore": 0,
+    "locationScore": 0,
+    "budgetCompatibility": 0,
+    "responseTime": 0,
+    "cancellationRate": 0,
+    "onTimeCompletion": 0,
+    "qualityScore": 0,
+    "preferredWorkTypes": [],
+    "minBudget": 0,
+    "maxBudget": 999999,
+    "maxDistance": 50,
+    "pastJobs": [],
+    "shortlistHistory": []
+  },
+  "createdAt": {
+    "$date": "2025-07-07T09:04:01.793Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T09:04:01.793Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "686bad0e1fff789756f61b1d"
+  },
+  "name": "rakshitha",
+  "email": "rakshitha@gmail.com",
+  "password": "$2a$10$8qTvnf66msAQyGYO7GDCDu9/GnhBZG4MPj/JrSVfMK56.N1jF1IRS",
+  "role": "landowner",
+  "phone": "",
+  "address": "",
+  "username": "rakshitha",
+  "profile": {
+    "location": {
+      "type": "Point",
+      "coordinates": []
+    },
+    "photo": "",
+    "bio": "",
+    "skills": [],
+    "availability": "Available",
+    "rating": 0,
+    "completedJobs": 0,
+    "pendingJobs": 0,
+    "activeJobs": 0,
+    "postedJobs": 0,
+    "totalSpent": 0,
+    "aiScore": 0,
+    "skillMatchScore": 0,
+    "reliabilityScore": 0,
+    "experienceScore": 0,
+    "locationScore": 0,
+    "budgetCompatibility": 0,
+    "responseTime": 0,
+    "cancellationRate": 0,
+    "onTimeCompletion": 0,
+    "qualityScore": 0,
+    "preferredWorkTypes": [],
+    "minBudget": 0,
+    "maxBudget": 999999,
+    "maxDistance": 50,
+    "pastJobs": [],
+    "shortlistHistory": []
+  },
+  "createdAt": {
+    "$date": "2025-07-07T11:18:38.650Z"
+  },
+  "updatedAt": {
+    "$date": "2025-07-07T11:18:38.650Z"
+  },
+  "__v": 0
+}]

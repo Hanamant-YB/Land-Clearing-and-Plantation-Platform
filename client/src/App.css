@@ -1,0 +1,76 @@
+/* App.css */
+
+/* Global App Layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area - this is crucial for footer stability */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* Important for flex behavior */
+}
+
+/* Ensure all route content takes full height */
+.main-content > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body and HTML scroll settings */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Full‑width wrapper for hero/edge-to-edge sections */
+.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional "container" for centered content on inner pages */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Page content wrapper */
+.page-content {
+  flex: 1;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .page-content {
+    padding: 15px 0;
+  }
+}
+
+/* Admin wrapper to prevent conflicts with main-content */
+.admin-wrapper {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}

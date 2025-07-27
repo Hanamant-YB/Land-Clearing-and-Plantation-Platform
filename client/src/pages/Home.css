@@ -1,0 +1,155 @@
+/* Utility: full‑bleed wrapper for sections */
+.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered max‑width container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #002f6c, #005792);
+  color: white;
+  padding: 120px 0 100px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-button.primary {
+  background-color: #ffcb05;
+  color: #002f6c;
+}
+
+.hero-button.primary:hover {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.hero-button.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-button.secondary:hover {
+  background-color: white;
+  color: #002f6c;
+}
+
+/* Features Section */
+.features-section {
+  background-color: white;
+  padding: 90px 0 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.features-section h2 {
+  font-size: 2.25rem;
+  margin-bottom: 50px;
+  color: #111827;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #f9fafb;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+  background-color: #1e293b;
+  color: white;
+  padding: 90px 0 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+}
+
+.cta-button {
+  padding: 12px 28px;
+  background-color: #ffcb05;
+  color: #1e293b;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f59e0b;
+  color: white;
+}
+
+/* Responsive Adjustment for Padding */
+@media (max-width: 768px) {
+  .hero-section,
+  .features-section,
+  .cta-section {
+    padding: 48px 0;
+  }
+}

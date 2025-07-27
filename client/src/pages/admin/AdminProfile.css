@@ -1,0 +1,149 @@
+.admin-profile-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.admin-profile-container h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #222;
+}
+
+.admin-change-password-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.admin-change-password-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+
+.admin-change-password-form input[type="password"]:focus {
+  border: 1.5px solid #4CAF50;
+  outline: none;
+}
+
+.admin-change-password-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.admin-change-password-form button[type="submit"]:hover {
+  background: #388e3c;
+}
+
+.admin-profile-container .success {
+  color: #388e3c;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.admin-profile-container .error {
+  color: #d32f2f;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.admin-profile-outer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  background: #f5f7fa;
+  padding: 40px 0;
+}
+
+.admin-profile-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.admin-profile-card h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #222;
+}
+
+.admin-change-password-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.admin-change-password-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+
+.admin-change-password-form input[type="password"]:focus {
+  border: 1.5px solid #4CAF50;
+  outline: none;
+}
+
+.admin-change-password-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.admin-change-password-form button[type="submit"]:hover {
+  background: #388e3c;
+}
+
+.admin-profile-card .success {
+  color: #388e3c;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.admin-profile-card .error {
+  color: #d32f2f;
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 500;
+} 

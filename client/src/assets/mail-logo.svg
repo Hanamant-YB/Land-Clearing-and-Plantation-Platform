@@ -1,0 +1,9 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" rx="12" fill="#4CAF50"/>
+  <g>
+    <rect x="10" y="16" width="28" height="16" rx="4" fill="#fff"/>
+    <polyline points="10,16 24,30 38,16" fill="none" stroke="#4CAF50" stroke-width="2"/>
+    <rect x="10" y="16" width="28" height="16" rx="4" fill="none" stroke="#388E3C" stroke-width="2"/>
+  </g>
+  <text x="24" y="44" text-anchor="middle" font-size="8" font-family="Arial, sans-serif" fill="#fff">CP</text>
+</svg> 

@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a,
+nav button {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover,
+nav button:hover {
+  text-decoration: underline;
+} 

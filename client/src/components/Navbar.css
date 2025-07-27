@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+/* Reset & Base */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #2563eb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links container */
+.navbar a,
+.navbar .btn-logout {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
+  transition: color 0.2s;
+}
+
+.navbar a:hover,
+.navbar .btn-logout:hover {
+  color: #f1f5f9;
+}
+
+/* Grouping */
+.navbar .link-group {
+  display: flex;
+  align-items: center;
+}
+
+/* User-info wrapper */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Profile link: name + avatar */
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;             /* ensure link stays white */
+}
+
+/* Username styling (if you want to tweak font) */
+.nav-profile-name {
+  font-weight: 600;
+}
+
+/* Avatar styling */
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+/* Logout button */
+.btn-logout {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-logout:hover {
+  background: #ffffff;
+  color: #2563eb;
+}
+
+/* Mobile collapse (optional) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+  .navbar .link-group {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .user-info {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}

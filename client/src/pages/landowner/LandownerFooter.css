@@ -1,0 +1,70 @@
+.landowner-footer {
+  border-top: 3px solid #ffb300;
+  background: linear-gradient(90deg, #1a237e 70%, #283593 100%);
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.landowner-footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 16px;
+}
+
+.landowner-footer .footer-section {
+  min-width: 180px;
+  max-width: 260px;
+  text-align: left;
+}
+
+.landowner-footer h4 {
+  color: #ffb300;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.landowner-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landowner-footer ul li, .landowner-footer .contact-info p {
+  color: #fff;
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+}
+
+.landowner-footer a {
+  color: #ffb300;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.landowner-footer a:hover {
+  color: #fff;
+}
+
+.landowner-footer .footer-bottom {
+  border-top: 1px solid #3949ab;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+@media (max-width: 900px) {
+  .landowner-footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .landowner-footer .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+} 

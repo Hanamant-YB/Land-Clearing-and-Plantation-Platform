@@ -1,0 +1,98 @@
+.landowner-navbar {
+  background: linear-gradient(90deg, #1a237e 70%, #283593 100%);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.landowner-navbar .nav-logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.landowner-navbar .link-group {
+  display: flex;
+  gap: 32px;
+}
+
+.landowner-navbar .link-group a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+  padding: 2px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.landowner-navbar .link-group a:hover {
+  color: #ffb300;
+  border-bottom: 2px solid #ffb300;
+}
+
+.landowner-navbar .user-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.landowner-navbar .user-info > * {
+  vertical-align: middle;
+}
+
+.landowner-navbar .navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.landowner-navbar .btn-logout {
+  background: #ffb300;
+  color: #1a237e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.landowner-navbar .btn-logout:hover {
+  background: #ffa000;
+}
+
+.notification-bell, .bell-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+@media (max-width: 700px) {
+  .landowner-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 4px;
+  }
+  .landowner-navbar .link-group {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .landowner-navbar .user-info {
+    margin-top: 8px;
+  }
+} 

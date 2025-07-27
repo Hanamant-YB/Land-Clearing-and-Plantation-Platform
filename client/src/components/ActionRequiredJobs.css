@@ -1,0 +1,117 @@
+.arj-section {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(51,153,204,0.07);
+  padding: 32px 24px 24px 24px;
+  margin: 32px auto 24px auto;
+  max-width: 900px;
+}
+.arj-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+.arj-job-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.arj-job-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(51,153,204,0.08);
+  padding: 20px 18px 16px 18px;
+  min-width: 270px;
+  flex: 1 1 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+.arj-job-card:hover {
+  box-shadow: 0 4px 16px rgba(51,153,204,0.15);
+}
+.arj-job-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+.arj-contractor-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e3eaf2;
+  background: #f0f4f8;
+}
+.arj-job-info {
+  flex: 1;
+}
+.arj-job-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+  color: #222;
+}
+.arj-contractor-name {
+  font-size: 0.97rem;
+  color: #3399cc;
+  margin-bottom: 2px;
+}
+.arj-job-budget {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 2px;
+}
+.arj-job-location {
+  font-size: 0.93rem;
+  color: #888;
+}
+.arj-status-chip {
+  padding: 6px 14px;
+  border-radius: 16px;
+  color: #fff;
+  font-size: 0.93rem;
+  font-weight: 600;
+  margin-left: 10px;
+  min-width: 110px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.arj-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.arj-continue-btn {
+  background: #3399cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.arj-continue-btn:hover {
+  background: #2677a6;
+}
+.arj-loading {
+  text-align: center;
+  color: #3399cc;
+  font-size: 1.1rem;
+  margin: 32px 0;
+}
+@media (max-width: 700px) {
+  .arj-job-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .arj-section {
+    padding: 16px 4px;
+  }
+} 
