@@ -1,4 +1,4 @@
-# 🏗️ Contractor Platform
+# 🏗️ LAND CLEARING AND PLANTATION PLATFORM
 
 A comprehensive contractor-landowner matching platform with AI-powered recommendations.
 
