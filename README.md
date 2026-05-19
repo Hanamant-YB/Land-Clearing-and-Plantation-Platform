@@ -19,7 +19,6 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)](YOUR_DEPLOYMENT_LINK)
 
 </div>
 
