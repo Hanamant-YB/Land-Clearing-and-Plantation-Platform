@@ -4,9 +4,9 @@
 
 ### AI-Powered Contractor & Landowner Management Platform
 
-*A scalable full-stack web application with AI-powered contractor recommendation workflows, Stripe payment integration, project tracking, and modern operational management architecture.*
+*A scalable full-stack web application with AI-powered contractor recommendation workflows, Stripe payment integration, project tracking, and modern operational management architecture.
 
-*The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application 
+The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application 
 designed to connect landowners with suitable contractors for land clearing and 
 plantation projects.
 
