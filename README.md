@@ -6,7 +6,7 @@
 
 *A scalable full-stack web application with AI-powered contractor recommendation workflows, Stripe payment integration, project tracking, and modern operational management architecture.*
 
-The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application 
+*The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application 
 designed to connect landowners with suitable contractors for land clearing and 
 plantation projects.
 
@@ -22,7 +22,7 @@ plantation projects.
       backend, and AI services.
     • The project demonstrates full-stack development, AI integration,
       REST APIs, payment workflows, and responsive UI engineering.
-
+*
 
 <br/>
 
