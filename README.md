@@ -325,31 +325,6 @@ or
 nodemon server.js
 ```
 
----
-
-# 🤖 AI Service Setup (Python Flask)
-
-## Navigate To AI Service Folder
-
-```bash id="0v20j0"
-cd ai-service
-```
-
----
-
-## Install Python Dependencies
-
-```bash id="53lz3w"
-pip install -r requirements.txt
-```
-
----
-
-## Start Flask AI Service
-
-```bash id="2yig7x"
-python app.py
-```
 
 ---
 
@@ -392,11 +367,17 @@ npm start
 
 > Add actual project screenshots below for stronger GitHub presentation and recruiter visibility.
 
-## 🖥️ Landing Page
+## 🖥️ Landing Page For Contractor
 
 ```md id="9a0ec8"
-![Landing Page](./screenshots/landing-page.png)
+<img width="1915" height="927" alt="image" src="https://github.com/user-attachments/assets/4d8c7bbf-2d4b-4c68-9e76-51aab94a4ff2" />
+<img width="1897" height="922" alt="image" src="https://github.com/user-attachments/assets/b9442221-1d45-470d-9edf-17b517a6c01b" />
+<img width="1907" height="910" alt="image" src="https://github.com/user-attachments/assets/939e47f1-3590-4a33-8e98-8f3bc2ce67f8" />
 ```
+## 🖥️ Landing Page For Land Owner
+<img width="1918" height="927" alt="image" src="https://github.com/user-attachments/assets/c0cfa435-dbee-45e8-b9fe-b59e6068f021" />
+<img width="1918" height="922" alt="image" src="https://github.com/user-attachments/assets/23725f46-b4b1-4ef9-84b3-8b8b9167ad29" />
+<img width="1897" height="930" alt="image" src="https://github.com/user-attachments/assets/13458eb5-e307-48ef-81f5-f943ac581560" />
 
 ---
 
