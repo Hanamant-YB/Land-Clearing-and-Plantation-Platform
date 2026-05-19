@@ -407,9 +407,6 @@ npm start
 
 ---
 
-# 🎥 Project Demo
-
-Demo video will be added soon.
 
 ---
 
