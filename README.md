@@ -4,25 +4,20 @@
 
 ### AI-Powered Contractor & Landowner Management Platform
 
-*A scalable full-stack web application with AI-powered contractor recommendation workflows, Stripe payment integration, project tracking, and modern operational management architecture.
+*A scalable full-stack web application with AI-powered contractor recommendation workflows, Stripe payment integration, project tracking, and modern operational management architecture.*
 
-The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application 
-designed to connect landowners with suitable contractors for land clearing and 
-plantation projects.
+The LAND CLEARING AND PLANTATION PLATFORM is a full-stack AI-powered web application designed to connect landowners with suitable contractors for land clearing and plantation projects.
 
-    • Landowners can register, log in, and post project requirements.
-    • The React.js frontend provides a modern and responsive user interface.
-    • Node.js and Express.js handle backend APIs, authentication, and workflows.
-    • MongoDB is used for database management and data storage.
-    • A Python Flask AI service recommends suitable contractors intelligently.
-    • Contractors can review, accept, and manage assigned projects.
-    • Admins can monitor users, projects, and overall platform operations.
-    • Stripe payment gateway integration enables secure online transactions.
-    • The platform follows a scalable architecture with separate frontend,
-      backend, and AI services.
-    • The project demonstrates full-stack development, AI integration,
-      REST APIs, payment workflows, and responsive UI engineering.
-*
+• Landowners can register, log in, and post project requirements.
+• The React.js frontend provides a modern and responsive user interface.
+• Node.js and Express.js handle backend APIs, authentication, and workflows.
+• MongoDB is used for database management and data storage.
+• A Python Flask AI service intelligently recommends suitable contractors.
+• Contractors can review, accept, and manage assigned projects.
+• Admins can monitor users, projects, and overall platform operations.
+• Stripe payment gateway integration enables secure online transactions.
+• The platform follows a scalable architecture with separate frontend, backend, and AI services.
+• The project demonstrates full-stack development, AI integration, REST APIs, payment workflows, and responsive UI engineering.
 
 <br/>
 
