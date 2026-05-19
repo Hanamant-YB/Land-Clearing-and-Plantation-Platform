@@ -365,9 +365,6 @@ npm start
 
 # 📸 Suggested Screenshots
 
-> Add actual project screenshots below for stronger GitHub presentation and recruiter visibility.
-
-
 
 ```md id="9a0ec8"
 
@@ -389,6 +386,9 @@ npm start
 ```md id="pq1i87"
 ![Dashboard](./screenshots/dashboard.png)
 ```
+<img width="1907" height="932" alt="image" src="https://github.com/user-attachments/assets/fd441780-d9c1-46cb-abf4-561923e4208a" />
+<img width="1907" height="916" alt="image" src="https://github.com/user-attachments/assets/a1c8cbae-a8f1-4e45-8202-5da2958d96a0" />
+<img width="1911" height="921" alt="image" src="https://github.com/user-attachments/assets/fe189aef-f6f7-4561-9cfb-3524f5b315bb" />
 
 ---
 
@@ -397,6 +397,7 @@ npm start
 ```md id="w8rhz6"
 ![AI Recommendation](./screenshots/ai-recommendation.png)
 ```
+<img width="1915" height="927" alt="image" src="https://github.com/user-attachments/assets/cc94c4a3-dcb8-4b9a-a5ac-33400759a1cd" />
 
 ---
 
@@ -405,16 +406,12 @@ npm start
 ```md id="fmk4k7"
 ![Stripe Payment](./screenshots/stripe-payment.png)
 ```
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/cf148711-2625-4525-9c2f-9f467580df3a" />
+<img width="1913" height="927" alt="image" src="https://github.com/user-attachments/assets/de31918b-688d-4f36-a8f8-5385ff5279a7" />
 
 ---
 
-## 📱 Mobile Responsive UI
 
-```md id="0q0lwc"
-![Mobile UI](./screenshots/mobile-ui.png)
-```
-
----
 
 # 🎥 Suggested Demo Video
 
@@ -430,37 +427,14 @@ npm start
 * Contractor acceptance workflow
 * Stripe payment integration
 * Admin dashboard overview
-* Mobile responsiveness showcase
 
 ---
 
-# ☁️ Suggested Deployment
 
-## Frontend Deployment
-
-* Vercel
-* Netlify
 
 ---
 
-## Backend Deployment
 
-* Render
-* Railway
-
----
-
-## AI Service Deployment
-
-* Render
-* Railway
-* PythonAnywhere
-
----
-
-## Database Hosting
-
-* MongoDB Atlas
 
 ---
 
