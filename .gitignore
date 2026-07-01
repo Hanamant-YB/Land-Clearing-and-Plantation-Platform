@@ -219,3 +219,32 @@ wiki/
 
 # ignore all
 ACKNOWLEDGEMENTS.md/
+ACKNOWLEDGEMENTS.md/
+AI_IMPLEMENTATION_PLAN.md
+AI_SHORTLIST_README.md
+DFD_Level1.drawio.xml/
+DFD_Level1_ImageStyle.drawio.xml/
+GIT_SETUP.md/
+PHASE_1_IMPLEMENTATION_GUIDE.md/
+PHASE_1_IMPLEMENTATION_SUMMARY.md/
+System_Architecture_Layered.drawio.xml/
+build_ml_dataset.py/
+check_notifications.js/
+check_payments.js/
+clear_fake_payments.js/
+contractor_shortlist_model.pkl/
+docker-compose.yml/
+env.example/
+generate_tables.py/
+h origin master/
+jobs.json/
+ml_api.py/
+ml_training_data.csv/
+requirements.txt/
+researchpaper.docx/
+setup_for_sharing.md/
+start_project.bat/
+start_project.sh/
+test_payment_stats.js/
+train_model.py/
+users.json/
