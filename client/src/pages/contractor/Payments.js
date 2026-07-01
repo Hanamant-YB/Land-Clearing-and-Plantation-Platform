@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../../context/AuthContext';
-import './Payments.css';
 import Navbar from '../../components/Navbar';
+import ContractorFooter from './ContractorFooter';
+import './Payments.css';
 
 export default function Payments() {
   const { token } = useContext(AuthContext);
@@ -384,6 +385,7 @@ export default function Payments() {
           </div>
         )}
       </div>
+      <ContractorFooter />
     </>
   );
 }

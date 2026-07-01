@@ -888,65 +888,65 @@ export default function AdminDashboard() {
                   <tbody>
                     {getFilteredData(contractorReviews, ['contractor.name', 'job.title']).length > 0 ? (
                       getFilteredData(contractorReviews, ['contractor.name', 'job.title']).map(review => (
-                        <tr key={review._id}>
-                          <td>
-                            <button
-                              className="link-btn"
-                              onClick={() => openReviewDetailModal(review)}
-                              title="View review details"
-                            >
-                              {review.contractor?.name}
-                            </button>
-                          </td>
-                          <td>
-                            <button
-                              className="link-btn"
-                              onClick={() => openReviewDetailModal(review)}
-                              title="View review details"
-                            >
-                              {review.job?.title}
-                            </button>
-                          </td>
-                          <td>
-                            <button
-                              className="link-btn"
-                              onClick={() => openReviewDetailModal(review)}
-                              title="View review details"
-                            >
-                              <div className="rating-display">
-                                {[1, 2, 3, 4, 5].map(star => (
-                                  <span 
-                                    key={star} 
-                                    className={`star ${star <= review.rating ? 'filled' : 'empty'}`}
-                                  >
-                                    ★
-                                  </span>
-                                ))}
-                                <span className="rating-text">({review.rating}/5)</span>
-                              </div>
-                            </button>
-                          </td>
-                          <td>{review.comment || '–'}</td>
-                          <td>{new Date(review.createdAt).toLocaleString()}</td>
-                          <td>
-                            <button
-                              className="action-btn"
-                              title="View review details"
-                              onClick={() => openReviewDetailModal(review)}
-                            >
-                              <Eye size={18} />
-                            </button>
+                      <tr key={review._id}>
+                        <td>
+                          <button
+                            className="link-btn"
+                            onClick={() => openReviewDetailModal(review)}
+                            title="View review details"
+                          >
+                            {review.contractor?.name}
+                          </button>
+                        </td>
+                        <td>
+                          <button
+                            className="link-btn"
+                            onClick={() => openReviewDetailModal(review)}
+                            title="View review details"
+                          >
+                            {review.job?.title}
+                          </button>
+                        </td>
+                        <td>
+                          <button
+                            className="link-btn"
+                            onClick={() => openReviewDetailModal(review)}
+                            title="View review details"
+                          >
+                            <div className="rating-display">
+                              {[1, 2, 3, 4, 5].map(star => (
+                                <span 
+                                  key={star} 
+                                  className={`star ${star <= review.rating ? 'filled' : 'empty'}`}
+                                >
+                                  ★
+                                </span>
+                              ))}
+                              <span className="rating-text">({review.rating}/5)</span>
+                            </div>
+                          </button>
+                        </td>
+                        <td>{review.comment || '–'}</td>
+                        <td>{new Date(review.createdAt).toLocaleString()}</td>
+                        <td>
+                          <button
+                            className="action-btn"
+                            title="View review details"
+                            onClick={() => openReviewDetailModal(review)}
+                          >
+                            <Eye size={18} />
+                          </button>
 
-                            <button
-                              className="action-btn delete"
-                              onClick={() => handleDeleteReview(review._id)}
-                              style={{ marginLeft: 8 }}
-                              title="Delete Review"
-                            >
-                              <Trash2 size={16} />
-                            </button>
-                          </td>
-                        </tr>
+                          <button
+                            className="action-btn delete"
+                            onClick={() => handleDeleteReview(review._id)}
+                            style={{ marginLeft: 8 }}
+                            title="Delete Review"
+                          >
+                            <Trash2 size={16} />
+                          </button>
+                        </td>
+                      </tr>
                       ))
                     ) : (
                       <tr>

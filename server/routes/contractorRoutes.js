@@ -18,7 +18,9 @@ const {
   getShortlistStatus,
   getContractorProfileById,
   updateJobStatus,
-  getContractorReviews
+  getContractorReviews,
+  getCompletedJobs,
+  getPastWorksStats
 } = require('../controllers/contractorController');
 
 const router = express.Router();
@@ -43,6 +45,13 @@ router.get(
   auth,
   isContractor,
   asyncHandler(getAssignedJobs)
+);
+
+router.get(
+  '/completed-jobs',
+  auth,
+  isContractor,
+  asyncHandler(getCompletedJobs)
 );
 
 router.get(
@@ -73,6 +82,13 @@ router.get(
   auth,
   isContractor,
   asyncHandler(getPastWorks)
+);
+
+router.get(
+  '/pastworks/stats',
+  auth,
+  isContractor,
+  asyncHandler(getPastWorksStats)
 );
 
 router.post(

@@ -5,6 +5,7 @@ import { AuthContext } from '../../context/AuthContext';
 import { Link } from 'react-router-dom';
 import './Assignments.css';
 import Navbar from '../../components/Navbar';
+import ContractorFooter from './ContractorFooter';
 
 export default function Assignments() {
   const { token, user } = useContext(AuthContext);
@@ -255,6 +256,7 @@ export default function Assignments() {
           </div>
         )}
       </div>
+      <ContractorFooter />
     </>
   );
 }

@@ -6,6 +6,7 @@ import { AuthContext } from '../../context/AuthContext';
 import './ContractorProfile.css';
 import Navbar from '../../components/Navbar';
 import ChangePassword from '../../components/ChangePassword';
+import ContractorFooter from './ContractorFooter';
 
 export default function ContractorProfile() {
   const { user, setUser } = useContext(AuthContext);
@@ -464,6 +465,7 @@ export default function ContractorProfile() {
           </div>
         </div>
       </div>
+      <ContractorFooter />
     </>
   );
 }

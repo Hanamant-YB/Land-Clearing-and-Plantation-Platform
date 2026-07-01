@@ -30,6 +30,7 @@ import ContractorProgress from './pages/contractor/JobProgress';
 import Payments           from './pages/contractor/Payments';
 import FeedBack           from './pages/contractor/FeedBack';
 import WorkManagement     from './pages/contractor/WorkManagement';
+import ContractorHome     from './pages/contractor/ContractorHome';
 
 import AdminDashboard from './pages/admin/AdminDashboard';
 import EyeModalTest from './pages/admin/EyeModalTest';
@@ -110,6 +111,7 @@ export default function App() {
                   element={
                     <RequireAuth>
                       <Routes>
+                        <Route path="home" element={<ContractorHome />} />
                         <Route path="profile"                     element={<ContractorProfile />} />
                         <Route path="pastworks"                   element={<PastWorks />} />
                         <Route path="assignments"                 element={<Assignments />} />
@@ -119,6 +121,7 @@ export default function App() {
                         <Route path="feedback"                    element={<FeedBack />} />
                         <Route path="ratings"                     element={<FeedBack />} />
                         <Route path="work-management"             element={<WorkManagement />} />
+                        <Route path="" element={<Navigate to="home" replace />} />
                       </Routes>
                     </RequireAuth>
                   }

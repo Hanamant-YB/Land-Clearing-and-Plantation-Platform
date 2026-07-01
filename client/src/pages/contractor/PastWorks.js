@@ -4,6 +4,7 @@ import axios from 'axios';
 import { AuthContext } from '../../context/AuthContext';
 import './PastWorks.css';
 import Navbar from '../../components/Navbar';
+import ContractorFooter from './ContractorFooter';
 
 export default function PastWorks() {
   const { token } = useContext(AuthContext);
@@ -359,15 +360,7 @@ export default function PastWorks() {
           </form>
         )}
 
-        {/* Add New Work Button */}
-        {!isAdding && (
-          <button 
-            onClick={() => setIsAdding(true)} 
-            className="btn-add-work"
-          >
-            + Add New Past Work
-          </button>
-        )}
+
 
         {/* Past Works List */}
         {!isAdding && (
@@ -434,7 +427,7 @@ export default function PastWorks() {
                         <div className="work-photos">
                           <h5>Work Photos ({work.photos.length}):</h5>
                           <div className="photo-gallery">
-                            {work.photos.map((photo, index) => (
+                            {work.photos.slice(0, 3).map((photo, index) => (
                               <div key={index} className="photo-item">
                                 <img 
                                   src={photo} 
@@ -473,6 +466,7 @@ export default function PastWorks() {
           </div>
         )}
       </div>
+      <ContractorFooter />
     </>
   );
 }

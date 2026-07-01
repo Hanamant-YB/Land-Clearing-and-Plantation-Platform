@@ -5,6 +5,7 @@ const Notification = require('../models/Notification');
 const Payment = require('../models/Payment');
 const WorkProgress = require('../models/WorkProgress');
 const sendEmail = require('../utils/sendEmail');
+const PastWorksService = require('../services/pastWorksService');
 
 // @desc    Apply for a job
 // @route   POST /api/contractor/apply
@@ -124,12 +125,7 @@ async function withdrawApplication(req, res) {
 // @access  Private (Contractor only)
 async function getPastWorks(req, res) {
   try {
-    const user = await User.findById(req.user._id);
-    if (!user) {
-      return res.status(404).json({ message: 'User not found' });
-    }
-
-    const pastWorks = user.profile?.pastJobs || [];
+    const pastWorks = await PastWorksService.getContractorPastWorks(req.user._id);
     res.json(pastWorks);
   } catch (error) {
     console.error('Get past works error:', error);
@@ -157,7 +153,7 @@ async function addPastWork(req, res) {
       return res.status(400).json({ message: 'Rating must be between 1 and 5' });
     }
 
-    const newPastWork = {
+    const pastWorkData = {
       title: title.trim(),
       type: type || '',
       description: description.trim(),
@@ -168,18 +164,7 @@ async function addPastWork(req, res) {
       photos: photos || []
     };
 
-    const user = await User.findByIdAndUpdate(
-      req.user._id,
-      { $push: { 'profile.pastJobs': newPastWork } },
-      { new: true }
-    );
-
-    if (!user) {
-      return res.status(404).json({ message: 'User not found' });
-    }
-
-    // Return the newly added past work
-    const addedWork = user.profile.pastJobs[user.profile.pastJobs.length - 1];
+    const addedWork = await PastWorksService.addManualPastWork(req.user._id, pastWorkData);
     res.status(201).json(addedWork);
   } catch (error) {
     console.error('Add past work error:', error);
@@ -196,29 +181,16 @@ async function updatePastWork(req, res) {
     const { title, type, description, budget, date, rating, landownerFeedback, photos } = req.body;
 
     const updateData = {};
-    if (title !== undefined) updateData['profile.pastJobs.$.title'] = title.trim();
-    if (type !== undefined) updateData['profile.pastJobs.$.type'] = type;
-    if (description !== undefined) updateData['profile.pastJobs.$.description'] = description.trim();
-    if (budget !== undefined) updateData['profile.pastJobs.$.budget'] = budget ? Number(budget) : null;
-    if (date !== undefined) updateData['profile.pastJobs.$.date'] = new Date(date);
-    if (rating !== undefined) updateData['profile.pastJobs.$.rating'] = rating ? Number(rating) : null;
-    if (landownerFeedback !== undefined) updateData['profile.pastJobs.$.landownerFeedback'] = landownerFeedback;
-    if (photos !== undefined) updateData['profile.pastJobs.$.photos'] = photos;
+    if (title !== undefined) updateData.title = title.trim();
+    if (type !== undefined) updateData.type = type;
+    if (description !== undefined) updateData.description = description.trim();
+    if (budget !== undefined) updateData.budget = budget ? Number(budget) : null;
+    if (date !== undefined) updateData.date = new Date(date);
+    if (rating !== undefined) updateData.rating = rating ? Number(rating) : null;
+    if (landownerFeedback !== undefined) updateData.landownerFeedback = landownerFeedback;
+    if (photos !== undefined) updateData.photos = photos;
 
-    const user = await User.findOneAndUpdate(
-      { 
-        _id: req.user._id,
-        'profile.pastJobs._id': workId 
-      },
-      { $set: updateData },
-      { new: true }
-    );
-
-    if (!user) {
-      return res.status(404).json({ message: 'Past work not found' });
-    }
-
-    const updatedWork = user.profile.pastJobs.find(work => work._id.toString() === workId);
+    const updatedWork = await PastWorksService.updatePastWork(req.user._id, workId, updateData);
     res.json(updatedWork);
   } catch (error) {
     console.error('Update past work error:', error);
@@ -233,16 +205,7 @@ async function deletePastWork(req, res) {
   try {
     const { workId } = req.params;
 
-    const user = await User.findByIdAndUpdate(
-      req.user._id,
-      { $pull: { 'profile.pastJobs': { _id: workId } } },
-      { new: true }
-    );
-
-    if (!user) {
-      return res.status(404).json({ message: 'User not found' });
-    }
-
+    await PastWorksService.deletePastWork(req.user._id, workId);
     res.json({ message: 'Past work deleted successfully' });
   } catch (error) {
     console.error('Delete past work error:', error);
@@ -334,6 +297,25 @@ async function getShortlistStatus(req, res) {
   }
 }
 
+// @desc    Get completed jobs for contractor
+// @route   GET /api/contractor/completed-jobs
+// @access  Private (Contractor only)
+async function getCompletedJobs(req, res) {
+  try {
+    const jobs = await Job.find({ 
+      selectedContractor: req.user._id,
+      status: 'completed'
+    })
+    .populate('postedBy', 'name email phone')
+    .sort({ createdAt: -1 });
+
+    res.json(jobs);
+  } catch (error) {
+    console.error('Get completed jobs error:', error);
+    res.status(500).json({ message: 'Server error fetching completed jobs' });
+  }
+}
+
 // @desc    Get contractor profile by ID
 // @route   GET /api/contractor/profile/:id
 // @access  Private (Landowner, Admin, Contractor)
@@ -420,6 +402,19 @@ async function getContractorReviews(req, res) {
   } catch (error) {
     console.error('Get contractor reviews error:', error);
     res.status(500).json({ message: 'Server error fetching reviews' });
+  }
+}
+
+// @desc    Get past works statistics
+// @route   GET /api/contractor/pastworks/stats
+// @access  Private (Contractor only)
+async function getPastWorksStats(req, res) {
+  try {
+    const stats = await PastWorksService.getPastWorksStats(req.user._id);
+    res.json(stats);
+  } catch (error) {
+    console.error('Get past works stats error:', error);
+    res.status(500).json({ message: 'Server error fetching past works statistics' });
   }
 }
 
@@ -532,7 +527,9 @@ module.exports = {
   getAssignedJobs,
   getAiShortlistedJobs,
   getShortlistStatus,
+  getCompletedJobs,
   getContractorProfileById,
   updateJobStatus,
-  getContractorReviews
+  getContractorReviews,
+  getPastWorksStats
 };

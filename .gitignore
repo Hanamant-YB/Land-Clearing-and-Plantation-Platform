@@ -210,3 +210,6 @@ dist/
 
 # Local development
 .local/
+
+# testing
+testing/

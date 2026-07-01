@@ -187,7 +187,7 @@ const getAIAnalytics = asyncHandler(async (req, res) => {
   try {
     // Use the aiAnalyticsService for consistent data
     const analytics = await aiAnalyticsService.getComprehensiveAnalytics();
-    
+
     // Get recent AI shortlists
     const recentShortlists = await Job.find({ aiShortlistGenerated: true })
       .populate('postedBy', 'name')

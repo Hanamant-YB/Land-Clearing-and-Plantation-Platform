@@ -37,7 +37,11 @@ export default function Navbar() {
   console.log("Navbar image URL:", getPhotoUrl(user?.profile?.photo));
   return (
     <nav className="navbar">
-      <Link to={user?.role === 'landowner' ? '/landowner/home' : '/'} className="nav-logo">
+      <Link to={
+        user?.role === 'landowner' ? '/landowner/home' :
+        user?.role === 'contractor' ? '/contractor/home' :
+        '/'
+      } className="nav-logo">
         Home
       </Link>
 
