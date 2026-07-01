@@ -216,3 +216,6 @@ testing/
 
 # wiki
 wiki/
+
+# ignore all
+ACKNOWLEDGEMENTS.md/
