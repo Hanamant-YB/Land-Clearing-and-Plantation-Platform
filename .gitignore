@@ -248,3 +248,11 @@ start_project.sh/
 test_payment_stats.js/
 train_model.py/
 users.json/
+PHASE
+
+# _1_IMPLEMENTATION_GUIDE.md
+ # Documentation
+GIT_SETUP.md
+PHASE_1_IMPLEMENTATION_GUIDE.md
+PHASE_1_IMPLEMENTATION_SUMMARY.md
+h origin master
